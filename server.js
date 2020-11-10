@@ -8,6 +8,7 @@ const errorhandler = require('errorhandler');
 const path = require('path');
 
 const indexRouter = require('./routes/index');
+const catalogoRouter = require('./routes/catalogo');
 
 const db = new sqlite.Database('./BoinaEditorialLibros3.sqlite');
 
@@ -23,8 +24,10 @@ app.set('view engine', 'ejs');
 app.set('views', __dirname + '/views');
 app.set('layout', 'layouts/layout');
 app.use(expressLayouts);
-app.use(express.static('public'));
+app.use('/public', express.static('public'));
+app.use(bodyParser.json());
 
 app.use('/', indexRouter);
+app.use('/catalogo', catalogoRouter);
 
 app.listen(process.env.PORT || 4001, console.log('servidor andando'));

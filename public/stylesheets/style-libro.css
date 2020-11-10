@@ -1,0 +1,102 @@
+body {
+    background-color: rgb(156, 187, 226);
+    width: 900px;
+    height: auto;
+}
+
+main {
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    color: white;
+}
+
+h1 {
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: 40px;    
+}
+
+.presentacion {
+    position: relative;
+}
+
+.informacion {
+    display: inline-block;
+    margin: 10px;
+}
+
+.precio {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: block;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 40px;
+}
+
+button {
+    width: 90px;
+    height: 40px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: white;
+    background-color: rgb(209, 53, 61);
+    border: 3px outset white;
+}
+
+.tapas {
+    width: 300px;
+    height: auto;
+    margin-top: 20px;
+    border: 5px solid white;
+    border-radius: 10px;
+}
+
+.datos p {
+    margin: 20px;
+    font-size: 18px;
+}
+
+#descripcion {
+    font-size: 24px;
+}
+
+.atajos-lista {
+    list-style: none;
+    display: inline-flex;
+    margin: 0;
+}
+
+.atajos-iconos {
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    padding: 8px 8px 0px 8px;
+    width: 40px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.atajos-iconos a {
+    text-decoration: none;
+}
+
+.atajos-iconos img {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+}
+
+.atajos-iconos p {
+    margin-top: 0;
+    font-size: 11px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+}

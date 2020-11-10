@@ -1,0 +1,50 @@
+body {
+    background-color: rgb(156, 187, 226);
+    width: 900px;
+    height: auto;
+}
+
+main {
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.titulos {
+    width: 750px;
+    height: auto;
+    display: inline-block;
+}
+
+.carta {
+    width: 220px;
+    height: auto;
+    display: inline-block;
+}
+
+.carta a {
+    text-decoration: none;
+}
+
+.carta h3 {
+    color: rgb(237, 255, 219);
+    margin-bottom: 4px;
+}
+
+.tapas {
+    width: 180px;
+    height: auto;
+    margin: 2px 8px 8px 8px;
+    border: 8px solid rgb(56, 56, 56);
+    border-radius: 8px;
+    transition: linear 0.2s;
+}
+
+.tapas:hover {
+    border: 8px solid rgb(241, 252, 240);
+}

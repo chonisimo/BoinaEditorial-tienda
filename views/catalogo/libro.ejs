@@ -1,0 +1,40 @@
+<head>
+    <link rel="stylesheet" href="/public/stylesheets/style-libro.css">
+</head>
+<main>
+    <h1><%= libros.titulo %></h1>
+    <div class="presentacion">
+        <img class="tapas" src="<%= libros.tapa %>" alt="">
+        <div class="informacion">
+            <p class="precio">$<%= libros.precio %></p>
+            <form action="">
+                <label for="cantidad">Cantidad:</label>
+                <input type="number" min="1" required>
+                <p class="stock">Stock:<%= libros.stock %></p>
+                <button type="submit">Agregar carrito</button>
+            </form>
+        </div>
+    </div>
+    <div class="datos">
+        <p id="descripcion"><%= libros.descripcion %> </p>
+        <p>Autor: <%= libros.autor %> </p>
+        <p>Tipo: <%= libros.tipo %> </p>
+        <p>Tamaño: <%= libros.tamaño %>cm </p>
+    </div>
+    <div class="atajos">
+        <ul class="atajos-lista">
+            <li class="atajos-iconos">
+                <a href="/catalogo/" class="catalogo">
+                    <img src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjQ4MHB0IiB2aWV3Qm94PSIwIDAgNDgwLjAwOTU4IDQ4MCIgd2lkdGg9IjQ4MHB0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Im0xMjggMTA0LjAwMzkwNnYtMzJjMC00LjQxNzk2OC0zLjU4MjAzMS04LTgtOGgtMTEyYy00LjQxNzk2OSAwLTggMy41ODIwMzItOCA4djMyem0wIDAiLz48cGF0aCBkPSJtMCAxMjAuMDAzOTA2djI2NGgxMjh2LTI2NHptOTYgMTA0aC02NGMtNC40MTc5NjkgMC04LTMuNTgyMDMxLTgtOHYtNjRjMC00LjQxNzk2OCAzLjU4MjAzMS04IDgtOGg2NGM0LjQxNzk2OSAwIDggMy41ODIwMzIgOCA4djY0YzAgNC40MTc5NjktMy41ODIwMzEgOC04IDh6bTAgMCIvPjxwYXRoIGQ9Im0wIDQzMi4wMDM5MDZ2NDBjMCA0LjQxNzk2OSAzLjU4MjAzMSA4IDggOGgxMTJjNC40MTc5NjkgMCA4LTMuNTgyMDMxIDgtOHYtNDB6bTAgMCIvPjxwYXRoIGQ9Im0wIDQwMC4wMDM5MDZoMTI4djE2aC0xMjh6bTAgMCIvPjxwYXRoIGQ9Im0xNDQgNDAwLjAwMzkwNmgxMDR2MTZoLTEwNHptMCAwIi8+PHBhdGggZD0ibTI0OCAzMi4wMDM5MDZ2LTI0YzAtNC40MTc5NjgtMy41ODIwMzEtNy45OTk5OTk3NS04LTcuOTk5OTk5NzVoLTg4Yy00LjQxNzk2OSAwLTggMy41ODIwMzE3NS04IDcuOTk5OTk5NzV2MjR6bTAgMCIvPjxwYXRoIGQ9Im0xNDQgODguMDAzOTA2aDEwNHYyOTZoLTEwNHptMCAwIi8+PHBhdGggZD0ibTE0NCA0MzIuMDAzOTA2djQwYzAgNC40MTc5NjkgMy41ODIwMzEgOCA4IDhoODhjNC40MTc5NjkgMCA4LTMuNTgyMDMxIDgtOHYtNDB6bTAgMCIvPjxwYXRoIGQ9Im0xNDQgNDguMDAzOTA2aDEwNHYyNGgtMTA0em0wIDAiLz48cGF0aCBkPSJtMjYzLjgwODU5NCAxNjUuNjY3OTY5IDQuMjgxMjUgMTYuNDMzNTkzIDEzNS40ODQzNzUtMzYuMTI4OTA2LTQuMjg1MTU3LTE2LjQzMzU5NHptMCAwIi8+PHBhdGggZD0ibTMzMC42NjQwNjIgNDIxLjk0OTIxOSAxMzUuNDgwNDY5LTM2LjEyODkwNy04LjU3ODEyNS0zMi44ODY3MTgtMTM1LjQ4ODI4MSAzNi4xMjg5MDZ6bTAgMCIvPjxwYXRoIGQ9Im00NTMuNTI3MzQ0IDMzNy40NTMxMjUtNDUuOTEwMTU2LTE3Ni0xMzUuNDg4MjgyIDM2LjEyODkwNiA0NS45MTAxNTYgMTc2em0wIDAiLz48cGF0aCBkPSJtMjU5Ljc2OTUzMSAxNTAuMTg3NSAxMzUuNDc2NTYzLTM2LjEyNS0xMS40ODQzNzUtNDQuMDU4NTk0Yy0xLjE4MzU5NC00LjI2NTYyNS01LjU0Mjk2OS02LjgxNjQwNi05LjgzOTg0NC01Ljc1NzgxMmwtMTIwIDMyYy00LjIzODI4MSAxLjE2MDE1Ni02Ljc2NTYyNSA1LjUtNS42ODM1OTQgOS43NTc4MTJ6bTAgMCIvPjxwYXRoIGQ9Im00NzAuMTgzNTk0IDQwMS4zMDA3ODEtMTM1LjQ4ODI4MiAzNi4xMjg5MDcgOS41NDI5NjkgMzYuNTc0MjE4Yy41NTQ2ODggMi4wNjI1IDEuOTA2MjUgMy44MjAzMTMgMy43NjE3MTkgNC44ODI4MTMgMS4yMDcwMzEuNzMwNDY5IDIuNTg5ODQ0IDEuMTE3MTg3IDQgMS4xMTcxODcuNjk5MjE5IDAgMS4zOTg0MzgtLjA4MjAzMSAyLjA3ODEyNS0uMjM4MjgxbDEyMC0zMmM0LjIzODI4MS0xLjE2MDE1NiA2Ljc2NTYyNS01LjUwMzkwNiA1LjY4MzU5NC05Ljc2MTcxOXptMCAwIi8+PC9zdmc+"/>
+                    <p>catalogo</p>
+                </a>
+            </li>
+            <li class="atajos-iconos">
+                <a href="/">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQ2MC4yOTggNDYwLjI5NyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgY2xhc3M9IiI+PGc+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+Cgk8Zz4KCQk8cGF0aCBkPSJNMjMwLjE0OSwxMjAuOTM5TDY1Ljk4NiwyNTYuMjc0YzAsMC4xOTEtMC4wNDgsMC40NzItMC4xNDQsMC44NTVjLTAuMDk0LDAuMzgtMC4xNDQsMC42NTYtMC4xNDQsMC44NTJ2MTM3LjA0MSAgICBjMCw0Ljk0OCwxLjgwOSw5LjIzNiw1LjQyNiwxMi44NDdjMy42MTYsMy42MTMsNy44OTgsNS40MzEsMTIuODQ3LDUuNDMxaDEwOS42M1YzMDMuNjY0aDczLjA5N3YxMDkuNjRoMTA5LjYyOSAgICBjNC45NDgsMCw5LjIzNi0xLjgxNCwxMi44NDctNS40MzVjMy42MTctMy42MDcsNS40MzItNy44OTgsNS40MzItMTIuODQ3VjI1Ny45ODFjMC0wLjc2LTAuMTA0LTEuMzM0LTAuMjg4LTEuNzA3TDIzMC4xNDksMTIwLjkzOSAgICB6IiBmaWxsPSIjNDI0MmU3IiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+CgkJPHBhdGggZD0iTTQ1Ny4xMjIsMjI1LjQzOEwzOTQuNiwxNzMuNDc2VjU2Ljk4OWMwLTIuNjYzLTAuODU2LTQuODUzLTIuNTc0LTYuNTY3Yy0xLjcwNC0xLjcxMi0zLjg5NC0yLjU2OC02LjU2My0yLjU2OGgtNTQuODE2ICAgIGMtMi42NjYsMC00Ljg1NSwwLjg1Ni02LjU3LDIuNTY4Yy0xLjcxMSwxLjcxNC0yLjU2NiwzLjkwNS0yLjU2Niw2LjU2N3Y1NS42NzNsLTY5LjY2Mi01OC4yNDUgICAgYy02LjA4NC00Ljk0OS0xMy4zMTgtNy40MjMtMjEuNjk0LTcuNDIzYy04LjM3NSwwLTE1LjYwOCwyLjQ3NC0yMS42OTgsNy40MjNMMy4xNzIsMjI1LjQzOGMtMS45MDMsMS41Mi0yLjk0NiwzLjU2Ni0zLjE0LDYuMTM2ICAgIGMtMC4xOTMsMi41NjgsMC40NzIsNC44MTEsMS45OTcsNi43MTNsMTcuNzAxLDIxLjEyOGMxLjUyNSwxLjcxMiwzLjUyMSwyLjc1OSw1Ljk5NiwzLjE0MmMyLjI4NSwwLjE5Miw0LjU3LTAuNDc2LDYuODU1LTEuOTk4ICAgIEwyMzAuMTQ5LDk1LjgxN2wxOTcuNTcsMTY0Ljc0MWMxLjUyNiwxLjMyOCwzLjUyMSwxLjk5MSw1Ljk5NiwxLjk5MWgwLjg1OGMyLjQ3MS0wLjM3Niw0LjQ2My0xLjQzLDUuOTk2LTMuMTM4bDE3LjcwMy0yMS4xMjUgICAgYzEuNTIyLTEuOTA2LDIuMTg5LTQuMTQ1LDEuOTkxLTYuNzE2QzQ2MC4wNjgsMjI5LjAwNyw0NTkuMDIxLDIyNi45NjEsNDU3LjEyMiwyMjUuNDM4eiIgZmlsbD0iIzQyNDJlNyIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPgoJPC9nPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjwvZz48L3N2Zz4=" />
+                    <p id="casa">home</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</main>

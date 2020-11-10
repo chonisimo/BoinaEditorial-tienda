@@ -1,0 +1,97 @@
+body {
+    background-color: rgb(156, 187, 226);
+    width: 900px;
+    height: auto;
+}
+
+.cabecera {
+    width: 900px;
+    height: 180px;
+    display: inline-flex;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.caratula {
+    width: 600px;
+    height: 160px;
+    display: inline-flex;
+    background: linear-gradient(135deg, #0d470b, #bbdfba);
+    border: 5px black solid;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+.caratula h1 {
+    font-size: 64px;
+    font-family: 'Staatliches', cursive;
+    margin: 0px 0px 0px 15px;
+    color: #e7f3e7;
+    text-decoration: none;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+}
+
+.perfil {
+    width: 350px;
+    height: 180px;
+}
+
+.compras {
+    display: inline-flex;
+    margin-bottom: 5px;
+    font-family: 'Inter', sans-serif;
+    background-color: rgb(245, 217, 217);
+    width: 192px;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.compras p {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.cantidad {
+    position: absolute;
+    background-color: rgb(214, 43, 43);
+    border-radius: 100%;
+    padding: 3px;
+    color: white;
+    margin-left: 123px;
+    margin-top: 1px;
+}
+
+.chango {
+    width: 50px;
+    height: auto;
+}
+
+.buscador {
+    width: 200px;
+    height: 50px;
+    margin-right: 0px;
+    display: flex;
+    position: relative;
+}
+
+.buscador input {
+    width: 150px;
+    height: 41px;
+    font-size: 18px;
+}
+
+.lupa {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(248, 240, 233);
+    border: 3px outset black;
+    padding: 5px;
+    cursor: pointer;
+}
