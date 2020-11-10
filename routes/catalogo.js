@@ -19,7 +19,7 @@ catalogoRouter.param('librosId', (req, res, next, librosId) => {
     })
 });
 
-//getting all
+//getting all catalogo
 catalogoRouter.get('/', (req, res, next) => {
     db.all('SELECT * FROM Libros', (err, libros) => {
         if(err) {
@@ -32,7 +32,7 @@ catalogoRouter.get('/', (req, res, next) => {
     });
 });
 
-//gettting one
+//gettting one libro
 catalogoRouter.get('/libro/:librosId', (req, res, next) => {
     db.get('SELECT * FROM Libros WHERE Libros.id = $librosId', {$librosId: req.params.librosId}, (err, libros) => {
         if(err) {
@@ -41,20 +41,10 @@ catalogoRouter.get('/libro/:librosId', (req, res, next) => {
             res.render(`catalogo/libro`, {libros: libros});
         }
     });
-    //res.send('libro de catalogo');
-    //res.render('catalogo/libro', );
-    /*db.get(`SELECT * FROM Libros WHERE Libros.id = $librosId`, {$librosId: req.params.id}, (error, libros) => {
-        if (error) {
-            next(error)
-        } else {
-            res.render(`catalogo/libro`, {libros: libros});
-        }
-    });*/
-    //res.status(200).json({libros: req.libros});
 });
 
 //creating one
-catalogoRouter.post('/', (req, res, next) => {
+/*catalogoRouter.post('/', (req, res, next) => {
     const codigo = req.body.libros.codigo;
     const titulo = req.body.libros.titulo;
     const tapa = req.body.libros.tapa;
@@ -92,10 +82,10 @@ catalogoRouter.post('/', (req, res, next) => {
             });
         }
     });
-});
+});*/
 
 //updating one
-catalogoRouter.patch('/:librosId', (req, res) => {
+/*catalogoRouter.patch('/:librosId', (req, res) => {
     const codigo = req.body.libros.codigo;
     const titulo = req.body.libros.titulo;
     const tapa = req.body.libros.tapa;
@@ -134,10 +124,10 @@ catalogoRouter.patch('/:librosId', (req, res) => {
              })
          }
      })
-});
+});*/
 
 //deleting one
-catalogoRouter.delete('/:librosId', (req, res) => {
+/*catalogoRouter.delete('/:librosId', (req, res) => {
     const sql = "DELETE FROM Libros WHERE Libros.id = $librosId";
     const values = {$librosId: req.params.id};
     db.run(sql, values, (error) => {
@@ -147,6 +137,6 @@ catalogoRouter.delete('/:librosId', (req, res) => {
             res.sendStatus(204);
         }
     });
-});
+});*/
 
 module.exports = catalogoRouter;

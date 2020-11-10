@@ -40,7 +40,7 @@ body {
     height: 180px;
 }
 
-.compras {
+.compras a {
     display: inline-flex;
     margin-bottom: 5px;
     font-family: 'Inter', sans-serif;
@@ -48,6 +48,7 @@ body {
     width: 192px;
     justify-content: center;
     border-radius: 20px;
+    text-decoration: none;
 }
 
 .compras p {
