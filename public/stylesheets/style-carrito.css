@@ -1,0 +1,84 @@
+main {
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+
+main h2 {
+    text-decoration: underline;
+    text-transform: uppercase;
+    margin-top: 15px;
+    font-size: 34px;
+    color: #ffffff;
+}
+
+.listado {
+    width: 770px;
+    height: auto;
+}
+
+.item {
+    width: 750px;
+    display: inline-flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    margin: 8px 0px;
+}
+
+.tapas {
+    width: 50px;
+    height: auto;
+}
+
+.titulo {
+    margin-left: 10px;
+    color: white;
+    width: 400px;
+    height: 45px;
+    display: inline-flex;
+    justify-content: left;
+}
+
+.unidades {
+    width: 30px;
+}
+
+.remover {
+    padding: 3px;
+    cursor: pointer;
+}
+
+.remover img {
+    width: 30px;
+    height: auto;
+}
+
+.precio {
+    color: white;
+}
+
+.cuenta {
+    color: white;
+    float: right;
+    margin-right: 30px;
+}
+
+.cuenta label {
+    text-transform: uppercase;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.compra {
+    padding: 10px;
+    text-transform: uppercase;
+    color: white;
+    background-color: rgb(209, 53, 61);
+    border: 3px outset white;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 600px;
+    display: inline-block;
+}
+
+

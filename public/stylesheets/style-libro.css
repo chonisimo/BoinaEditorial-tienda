@@ -16,6 +16,23 @@ h1 {
     font-size: 40px;    
 }
 
+.aviso {
+    width: 650px;
+    font-size: 24px;
+    display: inline-flex;
+    color: white;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    background-color: rgb(216, 48, 48);
+    border-radius: 10px;
+    padding: 0px 20px;
+}
+
+.alerta {
+    width: 70px;
+}
+
 .presentacion {
     position: relative;
 }
@@ -36,8 +53,8 @@ form {
     margin-bottom: 20px;
 }
 
-input {
-    width: 40px;
+.invicibles {
+    display: none;
 }
 
 button {
