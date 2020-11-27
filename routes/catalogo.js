@@ -19,7 +19,7 @@ catalogoRouter.param('librosId', (req, res, next, librosId) => {
     })
 });
 
-//getting all catalogo
+//Muestra la pagina con todo el catalogo
 catalogoRouter.get('/', (req, res, next) => {
     db.all('SELECT * FROM Libros', (err, libros) => {
         if(err) {
@@ -32,7 +32,7 @@ catalogoRouter.get('/', (req, res, next) => {
     });
 });
 
-//gettting one libro
+//muestra la planilla del libro por ID
 catalogoRouter.get('/libro/:librosId', (req, res, next) => {
     db.get('SELECT * FROM Libros WHERE Libros.id = $librosId', {$librosId: req.params.librosId}, (err, libros) => {
         if(err) {

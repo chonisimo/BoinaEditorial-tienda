@@ -57,6 +57,10 @@ form {
     display: none;
 }
 
+#identificacion {
+    display: none;
+}
+
 button {
     width: 90px;
     height: 40px;
