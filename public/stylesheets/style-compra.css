@@ -9,7 +9,6 @@ main {
 }
 
 main p {
-    text-decoration: underline;
     text-transform: uppercase;
     margin-top: 15px;
     font-size: 34px;
@@ -38,40 +37,4 @@ main p {
     width: 100px;
     height: auto;
     margin-left: 5px;
-}
-
-.atajos-lista {
-    list-style: none;
-    display: inline-flex;
-    margin: 0;
-}
-
-.atajos-iconos {
-    background-color: rgb(255, 255, 255);
-    margin: 10px;
-    padding: 8px 8px 0px 8px;
-    width: 40px;
-    height: 60px;
-    cursor: pointer;
-}
-
-.atajos-iconos a {
-    text-decoration: none;
-}
-
-.atajos-iconos img {
-    display: flex;
-    justify-content: center;
-    height: 40px;
-    width: 40px;
-}
-
-.atajos-iconos p {
-    margin-top: 0;
-    font-size: 11px;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'Oswald', sans-serif;
-    color: black;
-    text-decoration: none;
 }

@@ -29,8 +29,27 @@
     </div>
 </main>
 <script>
+    if (document.readyState == 'loading') {
+        document.addEventListener('DOMContentLoaded', ready);
+    } else {
+        ready()
+    }
+
+    function ready() {
+        document.getElementsByClassName('compra')[0].addEventListener('click', compraClickeada)
+    }
+
     let productoNombre = document.getElementsByClassName('titulo');
     
+    // Para vaciar todos los items del carro despues de click en comprar
+    function compraClickeada() {
+        let lista = document.getElementsByClassName('listado')[0];
+        while (lista.hasChildNodes()) {
+            lista.removeChild(lista.firstChild)
+        }
+        updateTotal();
+    };
+
     //muestra cantidad de productos en el icono de carrito
     const changoItem = document.getElementsByClassName('cantidad')[0];
     let cosas = document.getElementsByClassName('item');

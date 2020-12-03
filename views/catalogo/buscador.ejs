@@ -1,0 +1,14 @@
+<head>
+    <link rel="stylesheet" href="/public/stylesheets/style-buscador.css">
+</head>
+<main>
+    <h1>resultados</h1>
+    <div class="titulos" id="titulos"> 
+        <% for (var i=0; i < libros.length; i++) { %>
+            <div class="carta">
+                <a href="/catalogo/libro/<%= i+1 %>" target="blank"><h3><%= libros[i].titulo %></h3></a>
+                <a href="/catalogo/libro/<%= i+1 %>" target="blank"><img class="tapas" src="<%= libros[i].tapa %>"></a>
+            </div>
+        <% } %>
+    </div>
+</main>

@@ -72,27 +72,61 @@ body {
     height: auto;
 }
 
-.buscador {
+.buscador-form {
     width: 200px;
     height: 50px;
     margin-right: 0px;
-    display: flex;
-    position: relative;
+    display: inline-flex;
+    align-items: center;
 }
 
-.buscador input {
-    width: 150px;
+.buscador-input {
+    width: 135px;
     height: 41px;
     font-size: 18px;
+}
+
+.buscador-boton {
+    padding: 8px;
+    cursor: pointer;
 }
 
 .lupa {
     width: 25px;
     height: 25px;
-    display: flex;
-    align-items: center;
     background-color: rgb(248, 240, 233);
-    border: 3px outset black;
-    padding: 5px;
+}
+
+.atajos-lista {
+    list-style: none;
+    display: inline-flex;
+    margin: 0;
+}
+
+.atajos-iconos {
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    padding: 8px 8px 0px 8px;
+    width: 40px;
+    height: 60px;
     cursor: pointer;
+}
+
+.atajos-iconos a {
+    text-decoration: none;
+}
+
+.atajos-iconos img {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+}
+
+.atajos-iconos p {
+    margin-top: 0;
+    font-size: 11px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
 }

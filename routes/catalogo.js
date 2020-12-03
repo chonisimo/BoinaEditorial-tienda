@@ -27,9 +27,22 @@ catalogoRouter.get('/', (req, res, next) => {
         } else {
             res.render('catalogo/catalogo', {libros: libros.map(libro => {
                 return libro;
-            })});
+            })})
         }
     });
+});
+
+//Muestra los libros buscados
+catalogoRouter.get('/buscador', (req, res, next) => {
+    db.all(`SELECT * FROM Libros WHERE lower(Libros.titulo) LIKE "%${req.query.nombre}%"`, (err, libros) => {
+        if(err) {
+            next(err);
+        } else {
+            res.render(`catalogo/buscador`, {libros: libros.map(libro => {
+                return libro
+            })}); 
+        }
+    })
 });
 
 //muestra la planilla del libro por ID
@@ -38,7 +51,7 @@ catalogoRouter.get('/libro/:librosId', (req, res, next) => {
         if(err) {
             next(err);
         } else {
-            res.render(`catalogo/libro`, {libros: libros});
+            res.render(`catalogo/libro`, {libros: libros}); 
         }
     });
 });

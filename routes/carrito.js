@@ -28,6 +28,9 @@ carritoRouter.get('/', (req, res, next) => {
 
 //El aviso de compra realizada
 carritoRouter.get('/compra', (req, res, next) => {
+    do {
+        carro.pop()
+    } while (carro.length > 0);
     res.render('carrito/compra');
 })
 
@@ -50,8 +53,6 @@ carritoRouter.post('/', (req, res, next) => {
             res.render('catalogo/libro', {libros: libros});
         }
     });
-    
-
 });
 
 module.exports = carritoRouter;
