@@ -1,10 +1,9 @@
 const express = require('express');
 const catalogoRouter = express.Router();
 const sqlite = require('sqlite3');
-
 const db = new sqlite.Database('./BoinaEditorialLibros3.sqlite');
 
-catalogoRouter.param('librosId', (req, res, next, librosId) => {
+/*catalogoRouter.param('librosId', (req, res, next, librosId) => {
     const sql = 'SELECT * FROM Libros WHERE Libros.id = $librosId';
     const values = {$librosId: librosId};
     db.get(sql, values, (err, libros) => {
@@ -27,7 +26,7 @@ catalogoRouter.get('/', (req, res, next) => {
         } else {
             res.render('catalogo/catalogo', {libros: libros.map(libro => {
                 return libro;
-            })})
+            }), carro: 5})
         }
     });
 });
@@ -40,7 +39,7 @@ catalogoRouter.get('/buscador', (req, res, next) => {
         } else {
             res.render(`catalogo/buscador`, {libros: libros.map(libro => {
                 return libro
-            })}); 
+            }), carro: 5}); 
         }
     })
 });
@@ -51,10 +50,10 @@ catalogoRouter.get('/libro/:librosId', (req, res, next) => {
         if(err) {
             next(err);
         } else {
-            res.render(`catalogo/libro`, {libros: libros}); 
+            res.render(`catalogo/libro`, {libros: libros, carro: 5}); 
         }
     });
-});
+});*/
 
 //creating one
 /*catalogoRouter.post('/', (req, res, next) => {

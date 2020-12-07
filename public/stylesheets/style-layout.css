@@ -8,12 +8,13 @@ body {
     width: 900px;
     height: 180px;
     display: inline-flex;
+    justify-content: space-between;
     margin-left: 10px;
     margin-top: 10px;
 }
 
 .caratula {
-    width: 600px;
+    width: 450px;
     height: 160px;
     display: inline-flex;
     background: linear-gradient(135deg, #0d470b, #bbdfba);
@@ -23,7 +24,7 @@ body {
 }
 
 .caratula h1 {
-    font-size: 64px;
+    font-size: 66px;
     font-family: 'Staatliches', cursive;
     margin: 0px 0px 0px 15px;
     color: #e7f3e7;
@@ -57,7 +58,7 @@ body {
     font-weight: bold;
 }
 
-.cantidad {
+#cantidad {
     position: absolute;
     background-color: rgb(214, 43, 43);
     border-radius: 100%;

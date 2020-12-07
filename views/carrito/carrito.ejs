@@ -29,7 +29,7 @@
     </div>
 </main>
 <script>
-    if (document.readyState == 'loading') {
+    /*if (document.readyState == 'loading') {
         document.addEventListener('DOMContentLoaded', ready);
     } else {
         ready()
@@ -37,7 +37,7 @@
 
     function ready() {
         document.getElementsByClassName('compra')[0].addEventListener('click', compraClickeada)
-    }
+    }*/
 
     let productoNombre = document.getElementsByClassName('titulo');
     
@@ -51,12 +51,13 @@
     };
 
     //muestra cantidad de productos en el icono de carrito
-    const changoItem = document.getElementsByClassName('cantidad')[0];
+    /*const changoItem = document.getElementsByClassName('cantidad')[0];
     let cosas = document.getElementsByClassName('item');
-    changoItem.innerText = cosas.length;
+    changoItem.innerText = cosas.length;*/
 
     //boton para remover item de la lista de carrito
     const tacho = document.getElementsByClassName('remover');
+    let cosas = document.getElementsByClassName('item');
     for (let i= 0; i < tacho.length; i++) {
         let boton = tacho[i];
         boton.onclick = (event) => {
@@ -74,6 +75,7 @@
     for (let i= 0; i < unidadesInput.length; i++) {
         let cantidad = unidadesInput[i];
         cantidad.addEventListener('change', unidadesCambia)
+        updateTotal();
     };
 
     function unidadesCambia(event) {

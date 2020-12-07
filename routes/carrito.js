@@ -4,7 +4,7 @@ const sqlite = require('sqlite3');
 
 const db = new sqlite.Database('./BoinaEditorialLibros3.sqlite');
 
-let carro = [];
+var carro = [];
 /*No funciona ninguna para hacer lo que quiero que es eliminar valores repetidos en array
 let carroFinal = new Set();
 let unica = carro.reduce(function(car, lib){
@@ -17,21 +17,21 @@ let unica = carro.reduce(function(car, lib){
 };*/
 
 //Muestra views de carrito
-carritoRouter.get('/', (req, res, next) => {
+/*carritoRouter.get('/', (req, res, next) => {
     db.all('SELECT * FROM Libros', (err, libros) => {
         if(err) {
             next(err);
         } else {
-            res.render('carrito/carrito', {libros: carro || libros});
+            res.render('carrito/carrito', {libros: carro || libros, carro: carro.length});
         }
-})});
+})});*/
 
 //El aviso de compra realizada
-carritoRouter.get('/compra', (req, res, next) => {
+/*carritoRouter.get('/compra', (req, res, next) => {
     do {
         carro.pop()
     } while (carro.length > 0);
-    res.render('carrito/compra');
+    res.render('carrito/compra', {carro: carro.length});
 })
 
 //Suma al carrito el articulo clickeado
@@ -42,17 +42,9 @@ carritoRouter.post('/', (req, res, next) => {
             next(err);
         } else {
             carro.push(libros);
-            /*for (let i = 0; i < carro.length; i++) {
-                if (carro[i] === libros) {
-                    carro.pop();
-                } else {
-                    carro.push(libros);
-                }
-            };*/
-            //console.log(carro);  
-            res.render('catalogo/libro', {libros: libros});
+            res.render('catalogo/libro', {libros: libros, carro: carro.length});
         }
     });
-});
+});*/
 
 module.exports = carritoRouter;

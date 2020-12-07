@@ -4,14 +4,25 @@
     <meta http-equiv="X-UA-compatible" content="ie=edge">
     <link rel="icon" href="https://i.imgur.com/lhUSefn.png" />
     <link rel="stylesheet" type="text/css" href="/public/stylesheets/style-index.css">
-    <title>Boina editorial tienda</title>
+    <title>Boina editorial</title>
 </head>
 <body>
     <main>
-        <h2>Nuestras publicaciones</h2>
+        <div class="introduccion-editorial">
+            <h2 class="slogan-editorial">Un lugar donde empezar</h2>
+            <div class="bloque-editorial">
+                <p class="descripcion-editorial">Boina editorial se dedica a brindarle un espacio a todos los artistas principiantes independiente que estén iniciando su camino profesional 
+                    en donde pueden empezar a dar a conocer su talento y trabajo. Al mismo tiempo, busca ser una introducción a todo tipo de literatura 
+                    y arte para el público. Sin discriminar en temáticas ni géneros, continuamente incorporamos nuevos productos a nuestro catalogo que 
+                    amplíe los horizontes de nuestro público.</p>
+                <p class="descripcion-editorial">Así es como podrás encontrar historietas, mangas, ilustraciones, poesías, relatos, cuentos y hasta novelas en nuestro catalogo 
+                    cruzando por géneros como el humor, drama, ciencia ficción, educativos, entre otros. Poseemos productos para todas las edades.</p>
+            </div>
+        </div>
+        <h2 class="muestra-items">Nuestras publicaciones</h2>
             <div class="publicaciones" id="publicaciones">
                 <% for (var i=0; i < 12; i++) { %>
-                    <a href="/catalogo/libro/<%= i+1 %>" target="blank"><img class="tapas" src="<%= libros[i] %>"></a>
+                    <a href="/catalogo/libro/<%= i+1 %>" target="blank"><img class="tapas" src="<%= libros[i].tapa %>"></a>
                 <% } %> 
             </div>
     </main>
