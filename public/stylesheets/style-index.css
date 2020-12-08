@@ -52,11 +52,11 @@ main {
 /* pantalla celulares */
 @media screen and (max-width: 455px) and (orientation: portrait) {
     .introduccion-editorial {
-        width: 400px;
+        width: 330px;
     }
 
     .slogan-editorial {
-        font-size: 34px;
+        font-size: 36px;
     }
 
     .bloque-editorial {
@@ -73,7 +73,7 @@ main {
     }
 
     .tapas {
-        width: 150px;
+        width: 140px;
         height: auto;
         margin: 7px;
         border: 4px solid  rgb(56, 56, 56);
