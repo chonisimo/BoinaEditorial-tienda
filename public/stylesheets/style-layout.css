@@ -133,7 +133,7 @@ body {
 }
 
 /* pantalla celulares */
-@media screen and (max-width: 455px) {
+@media screen and (max-width: 455px) and (orientation: portrait) {
     body {
         width: 455px;
         height: auto;

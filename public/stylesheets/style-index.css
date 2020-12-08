@@ -50,7 +50,7 @@ main {
 }
 
 /* pantalla celulares */
-@media screen and (max-width: 455px) {
+@media screen and (max-width: 455px) and (orientation: portrait) {
     .introduccion-editorial {
         width: 400px;
     }
