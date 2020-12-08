@@ -49,3 +49,26 @@ main {
     border: 8px solid rgb(241, 252, 240);
 }
 
+/* pantalla celulares */
+@media screen and (max-width: 500px) {
+    .introduccion-editorial {
+        width: 450px;
+    }
+
+    .slogan-editorial {
+        font-size: 44px;
+    }
+
+    .bloque-editorial {
+        border: 4px rgb(241, 252, 240) solid;
+        padding: 20px;
+    }
+
+    .descripcion-editorial {
+        font-size: 18px;
+    }
+
+    .muestra-items {
+        font-size: 28px;
+    }
+}

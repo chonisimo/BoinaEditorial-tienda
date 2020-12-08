@@ -131,3 +131,80 @@ body {
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
 }
+
+/* pantalla celulares */
+@media screen and (max-width: 500px) {
+    body {
+        width: 500px;
+        height: auto;
+    }
+
+    .cabecera {
+        width: 450px;
+        height: 100px;
+        margin-left: 5px;
+    }
+
+    .caratula {
+        width: 250px;
+        height: 95px;
+        margin-right: 10px;
+        border-radius: 10px;
+        border: 3px black solid;
+    }
+
+    .caratula h1 {
+        font-size: 37px;
+        margin-left: 5px;
+    }
+
+    .logo {
+        width: 90px;
+        height: 90px;
+    }
+
+    .perfil {
+        width: 130px;
+        height: 82px;
+        margin-top: 6px;
+    }
+
+    .compras a {
+        width: 120px;
+        height: 40px;
+        border-radius: 10px;
+    }
+
+    .compras p {
+        font-size: 14px;
+    }
+
+    #cantidad {
+        margin-left: 90px;
+        font-size: 13px;
+    }
+
+    .chango {
+        width: 30px;
+    }
+
+    .buscador-form {
+        width: 100px;
+        height: 45px;
+    }
+    
+    .buscador-input {
+        width: 80px;
+        height: 30px;
+        font-size: 14px;
+    }
+
+    .buscador-boton {
+        padding: 7px;
+    }
+
+    .lupa {
+        width: 15px;
+        height: 15px;
+    }
+}

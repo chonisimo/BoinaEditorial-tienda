@@ -50,22 +50,13 @@
         updateTotal();
     };
 
-    //muestra cantidad de productos en el icono de carrito
-    /*const changoItem = document.getElementsByClassName('cantidad')[0];
-    let cosas = document.getElementsByClassName('item');
-    changoItem.innerText = cosas.length;*/
-
     //boton para remover item de la lista de carrito
     const tacho = document.getElementsByClassName('remover');
-    let cosas = document.getElementsByClassName('item');
     for (let i= 0; i < tacho.length; i++) {
         let boton = tacho[i];
         boton.onclick = (event) => {
             let botonClickeado = event.target;
-            let cosasCantidad = cosas.length;
             botonClickeado.parentElement.parentElement.remove();
-            cosasCantidad = cosasCantidad - 1;
-            changoItem.innerText = cosasCantidad;
             updateTotal();
         }
     }
