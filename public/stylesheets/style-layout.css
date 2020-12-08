@@ -133,14 +133,14 @@ body {
 }
 
 /* pantalla celulares */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 455px) {
     body {
-        width: 500px;
+        width: 455px;
         height: auto;
     }
 
     .cabecera {
-        width: 450px;
+        width: 400px;
         height: 100px;
         margin-left: 5px;
     }
@@ -164,7 +164,7 @@ body {
     }
 
     .perfil {
-        width: 130px;
+        width: 120px;
         height: 82px;
         margin-top: 6px;
     }
