@@ -49,8 +49,13 @@ main h2 {
     display: inline-flex;
     align-items: center;
     align-content: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin: 8px 0px;
+}
+
+.item-unidades {
+    display: inline-flex;
+    align-items: center;
 }
 
 .tapas {
@@ -69,13 +74,13 @@ main h2 {
 
 .unidades {
     width: 30px;
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 .remover {
     padding: 3px;
+    margin-right: 5px;
     cursor: pointer;
-    margin-right: 8px;
 }
 
 .remover img {
@@ -84,12 +89,15 @@ main h2 {
 }
 
 .precio {
-    margin-right: 150px;
+    margin-right: 158px;
+}
+
+.precio-unidades {
+    float: right;
 }
 
 .cuenta {
     float: right;
-    
 }
 
 .cuenta label {
@@ -108,6 +116,85 @@ main h2 {
     margin-top: 30px;
     margin-left: 600px;
     display: inline-block;
+}
+
+@media screen and (max-width: 455px) and (orientation: portrait) {
+    main {
+        width: 350px;
+        height: auto;
+    }
+
+    main h2 {
+        font-size: 22px;
+    }
+
+    .categorias {
+        width: 330px;
+        font-size: 14px;
+        display: inline-flex;
+        justify-content: space-between;
+    }
+
+    .titulo-precio {
+        margin-left: 0px;
+    }
+
+    .titulo-cantidad {
+        margin-right: 0px;
+    }
+
+    .linea-separacion {
+        width: 340px;
+    }
+
+    .listado {
+        width: 330px;
+        height: auto;
+    }
+
+    .item {
+        width: 330px;
+        justify-content: space-between;
+    }
+
+    .item-unidades {
+        float: right;
+    }
+
+    .titulo {
+        display: none;
+    }
+
+    .unidades {
+        width: 22px;
+        height: 26px;
+        margin: 0px;
+    }
+
+    .remover {
+        padding: 2px;
+        margin: 0px;
+    }
+
+    .remover img {
+        width: 20px;
+        height: auto;
+    }
+
+    .precio {
+        margin-right: 0px;
+        margin-left: 25px;
+    }
+
+    .precio-unidades {
+        display: none;
+    }
+
+    .compra {
+        margin-left: 235px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 }
 
 

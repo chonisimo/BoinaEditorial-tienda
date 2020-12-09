@@ -140,10 +140,10 @@ body {
     }
 
     .cabecera {
-        width: 350px;
+        width: 330px;
         height: 90px;
         margin-left: 2px;
-        justify-content: space-around;
+        justify-content: none;
     }
 
     .caratula {
@@ -151,6 +151,7 @@ body {
         height: 83px;
         border-radius: 10px;
         border: 3px black solid;
+        margin-right: 0px;
     }
 
     .caratula h1 {
@@ -180,7 +181,7 @@ body {
 
     #cantidad {
         margin-left: 70px;
-        font-size: 12px;
+        font-size: 11px;
     }
 
     .chango {

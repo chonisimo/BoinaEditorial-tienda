@@ -88,3 +88,43 @@ h1 {
 #descripcion {
     font-size: 24px;
 }
+
+@media screen and (max-width: 455px) and (orientation: portrait) {
+    main {
+        width: 350px;
+        height: auto;
+    }
+
+    .aviso {
+        margin-top: 10px;
+        padding: 0 5px;
+        width: 330px;
+        font-size: 16px;
+    }
+
+    .alerta {
+        width: 30px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .informacion {
+        margin: 0px;
+    }
+
+    .precio {
+        font-size: 48px;
+        margin-top: 20px;
+    }
+
+    .tapas {
+        width: 250px;
+        border: 3px solid white;
+    }
+
+    #descripcion {
+        font-size: 18px;
+    }
+}

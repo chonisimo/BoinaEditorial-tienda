@@ -1,8 +1,3 @@
-body {
-    width: 900px;
-    height: auto;
-}
-
 main {
     text-align: center;
     font-family: 'Inter', sans-serif;
@@ -37,4 +32,33 @@ main p {
     width: 100px;
     height: auto;
     margin-left: 5px;
+}
+
+@media screen and (max-width: 455px) and (orientation: portrait) {
+    main {
+        width: 350px;
+        height: auto;
+    }
+
+    main p {
+        font-size: 20px;
+        margin-top: 8px;
+    }
+
+    .aviso {
+        width: 330px;
+        padding: 10px;
+        margin-top: 25px;
+        align-items: center;
+    }
+
+    .chona-corazon {
+        width: 75px;
+        height: 75px;
+    }
+
+    .logo-boina {
+        width: 60px;
+        height: 90px;
+    }
 }
