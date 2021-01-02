@@ -4,7 +4,6 @@ const sqlite = require('sqlite3');
 
 const db = new sqlite.Database('./BoinaEditorialLibros3.sqlite');
 
-var carro = [];
 /*No funciona ninguna para hacer lo que quiero que es eliminar valores repetidos en array
 let carroFinal = new Set();
 let unica = carro.reduce(function(car, lib){
