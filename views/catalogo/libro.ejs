@@ -12,6 +12,7 @@
         <img class="tapas" src="<%= libros.tapa %>" alt="">
         <div class="informacion">
             <p class="precio">$<%= libros.precio %></p>
+            <p>La version digital a mitad de precio.</p>
             <form class="afirmacion" action="/carrito" method="POST" class="info-form">
                 <p class="stock">Stock: <%= libros.stock %></p>
                 <input type="number" id="identificacion" name="identificacion" value="<%= libros.id %>">
