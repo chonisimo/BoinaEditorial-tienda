@@ -36,6 +36,11 @@ main {
     font-size: 34px;
 }
 
+.publicaciones {
+    width: 80%;
+    margin: 0 auto;
+}
+
 .tapas {
     width: 180px;
     height: auto;
@@ -70,6 +75,11 @@ main {
 
     .muestra-items {
         font-size: 22px;
+    }
+
+    .publicaciones {
+        width: 100%;
+        margin: 0 auto;
     }
 
     .tapas {

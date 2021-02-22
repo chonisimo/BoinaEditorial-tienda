@@ -28,15 +28,16 @@ h1 {
 }
 
 .titulos {
-    width: 750px;
+    width: 90%;
     height: auto;
     display: inline-block;
 }
 
 .carta {
-    width: 220px;
+    width: 15%;
     height: auto;
     display: inline-block;
+    margin: 4px 20px 15px 20px;
 }
 
 .carta a {
@@ -51,7 +52,6 @@ h1 {
 .tapas {
     width: 180px;
     height: auto;
-    margin: 2px 8px 8px 8px;
     border: 8px solid rgb(56, 56, 56);
     border-radius: 8px;
     transition: linear 0.2s;
@@ -79,13 +79,15 @@ h1 {
     }
 
     .titulos {
-        width: 330px;
+        width: 100%;
         height: auto;
     }
 
     .carta {
-        width: 140px;
+        width: 40%;
         height: auto;
+        margin: 5px 0;
+        display: inline-block;
     }
 
     .carta h3 {
@@ -97,7 +99,7 @@ h1 {
         width: 120px;
         height: auto;
         border: 4px solid rgb(56, 56, 56);
-        margin: 2px 8px 8px 8px;
+        margin: 2px 4px 4px 4px;
     }
 
     .tapas:hover {

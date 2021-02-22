@@ -13,7 +13,10 @@
         <div class="informacion">
             <p class="precio">$<%= libros.precio %></p>
             <p>La version digital a mitad de precio.</p>
-            <form class="afirmacion" action="/carrito" method="POST" class="info-form">
+            <% if (libros.id === 20) { %>
+                <p id="disponibilidad">NO DISPONIBLE</p>
+            <% } %> 
+            <form action="/carrito" method="POST" class="info-form">
                 <p class="stock">Stock: <%= libros.stock %></p>
                 <input type="number" id="identificacion" name="identificacion" value="<%= libros.id %>">
                 <button class="boton" type="submit">Agregar carrito</button>
@@ -21,6 +24,13 @@
         </div>
     </div>
     <div class="datos">
+        <ul class="imagenes">
+            <li><a href="<%= libros.pagina1 %>" target="blank"><img src="<%= libros.pagina1 %>" alt=""></a></li>
+            <li><a href="<%= libros.pagina2 %>" target="blank"><img src="<%= libros.pagina2 %>" alt=""></a></li>
+            <li><a href="<%= libros.pagina3 %>" target="blank"><img src="<%= libros.pagina3 %>" alt=""></a></li>
+            <li><a href="<%= libros.pagina4 %>" target="blank"><img src="<%= libros.pagina4 %>" alt=""></a></li>
+            <li><a href="<%= libros.pagina5 %>" target="blank"><img src="<%= libros.pagina5 %>" alt=""></a></li>
+        </ul>
         <p id="descripcion"><%= libros.descripcion %> </p>
         <p>Autor: <%= libros.autor %> </p>
         <p>Genero: <%= libros.genero %> </p>
@@ -29,5 +39,3 @@
         <p>Tamaño: <%= libros.tamaño %>cm </p>
     </div>
 </main>
-<script>
-</script>
