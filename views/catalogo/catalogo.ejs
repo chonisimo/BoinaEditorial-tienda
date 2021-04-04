@@ -13,6 +13,9 @@
                 <div class="carta">
                     <a href="/catalogo/libro/<%= i+1 %>"><h3><%= libros[i].titulo %></h3></a>
                     <a href="/catalogo/libro/<%= i+1 %>"><img class="tapas" src="<%= libros[i].tapa %>"></a>
+                    <p>$<%= libros[i].precio %></p>
+                    <p><%= libros[i].tipo %></p>
+                    <p><%= libros[i].publico %></p>
                 </div>
             <% } %>
     </div>

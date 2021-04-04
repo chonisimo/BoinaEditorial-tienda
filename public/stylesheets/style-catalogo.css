@@ -49,6 +49,12 @@ h1 {
     margin-bottom: 4px;
 }
 
+.carta p {
+    color: rgb(242, 255, 228);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 .tapas {
     width: 180px;
     height: auto;
@@ -93,6 +99,11 @@ h1 {
     .carta h3 {
         margin: 0px 5px 4px 5px;
         font-size: 16px;
+    }
+
+    .carta p {
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
 
     .tapas {
