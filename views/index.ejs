@@ -2,28 +2,211 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-compatible" content="ie=edge">
-    <link rel="icon" href="https://i.imgur.com/lhUSefn.png" />
-    <link rel="stylesheet" type="text/css" href="/public/stylesheets/style-index.css">
-    <title>Boina editorial</title>
+    <!-- CSS stylesheets-->
+    <link rel="stylesheet" type="text/css" href="/public/stylesheets/style-index2.css">
+
 </head>
 <body>
-    <main>
-        <div class="introduccion-editorial">
-            <h2 class="slogan-editorial">El lugar donde empezar</h2>
-            <div class="bloque-editorial">
-                <p class="descripcion-editorial">Boina editorial se dedica a brindarle un espacio a todos los artistas principiantes independiente que estén iniciando su camino profesional 
-                    en donde pueden empezar a dar a conocer su talento y trabajo. Al mismo tiempo, busca ser una introducción a todo tipo de literatura 
-                    y arte para el público. Sin discriminar en temáticas ni géneros, continuamente incorporamos nuevos productos a nuestro catalogo que 
-                    amplíe los horizontes de nuestro público.</p>
-                <p class="descripcion-editorial">Así es como podrás encontrar historietas, mangas, ilustraciones, poesías, relatos, cuentos y hasta novelas en nuestro catalogo 
-                    cruzando por géneros como el humor, drama, ciencia ficción, educativos, entre otros. Poseemos productos para todas las edades.</p>
+        <section id="slogan">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 texto-slogan">
+                        <h1>Iniciando lectores en nuevas experiencias de literatura y arte. Un punto de partida para nuevos autores.</h1>
+                    </div>
+                    <div class="col-lg-6">
+                        <img class="logo-slogan" src="https://i.imgur.com/KhlwLT7.png" alt="logo-editorial-inicio">
+                    </div>
+                </div>
             </div>
-        </div>
-        <h2 class="muestra-items">Nuestras publicaciones</h2>
-            <div class="publicaciones" id="publicaciones">
-                <% for (var i=0; i < 12; i++) { %>
-                    <a href="/catalogo/libro/<%= i+1 %>" target="blank"><img class="tapas" src="<%= libros[i].tapa %>"></a>
-                <% } %> 
+        </section>
+        <section id="caracteristicas">
+            <div class="row">
+                <div class="feature-box col-lg-4">
+                    <i class="icono fas fa-pen-nib fa-4x"></i>
+                    <h3 class="feature-title">Gran calidad</h3>
+                    <p class="feature-text">Libros de excelentes ediciones, trabajo profesional.</p>
+                </div>
+                <div class="feature-box col-lg-4">
+                    <i class="icono fas fa-coins fa-4x"></i>
+                    <h3 class="feature-title">Precios económicos</h3>
+                    <p class="feature-text">Productos con valores accesibles para todos.</p>
+                </div>
+                <div class="feature-box col-lg-4">
+                    <i class="icono fas fa-book-reader fa-4x"></i>
+                    <h3 class="feature-title">Catalogo diverso</h3>
+                    <p class="feature-text">Abarcando una gran variedad de géneros y edades.</p>
+                </div>
             </div>
-    </main>
+        </section>
+        <section id="catalogo">
+            <h1 class="catalogo-titulo">Catalogo</h1>
+            <div id="catalogo-carrousel" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-lg-6 catalogo-general">
+                            <h2 class="catalogo-texto">Una selección de títulos de artistas argentinos en crecimiento de gran talento abarcando una gran variedad de temáticas y estilos de arte literario.</h2>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 imagenes">
+                                    <img class="catalogo-image" src="https://i.imgur.com/soQhPIs.jpg" alt="ecus">
+                                </div>
+                                <div class="col-lg-4 col-md-6 imagenes">
+                                    <img class="catalogo-image" src="https://i.imgur.com/nROZCQR.jpg" alt="elFabuloso2019">
+                                </div>
+                                <div class="col-lg-4 col-md-6 imagenes">
+                                    <img class="catalogo-image" src="https://i.imgur.com/lUh51GI.jpg" alt="fragmentos">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-lg-6 catalogo-generos">
+                            <h2 class="catalogo-texto">Contamos con un enorme abanico de géneros de lo mas surtidos desde la ciencia ficción, pasando por los superhéroes, aventura y hasta el humor más absurdo.</h2>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 imagenes">
+                                    <img class="catalogo-image" src="https://i.imgur.com/cmhB0bf.jpg" alt="blonek">
+                                </div>
+                                <div class="col-lg-4 col-md-6 imagenes">
+                                    <img class="catalogo-image" src="https://i.imgur.com/HAQYJgL.jpg" alt="chonasComics2">
+                                </div>
+                                <div class="col-lg-4 col-md-6 imagenes">
+                                    <img class="catalogo-image" src="https://i.imgur.com/iDJ971g.jpg" alt="poesiaBarataParaViajerosApresurados">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-lg-6 catalogo-edades">
+                            <h2 class="catalogo-texto">Vas a poder encontrar un libro para todas las edades y las diferentes etapas de la vida de una persona. Tenemos el libro que vos queres acá mismo.</h2>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 imagenes">
+                                    <img class="catalogo-image" src="https://i.imgur.com/mqx6OjV.jpg" alt="voddom">
+                                </div>
+                                <div class="col-lg-4 col-md-6 imagenes">
+                                    <img class="catalogo-image" src="https://i.imgur.com/wholUHM.jpg" alt="pachaQuilombo1">
+                                </div>
+                                <div class="col-lg-4 col-md-6 imagenes">
+                                    <img class="catalogo-image" src="https://i.imgur.com/VqXH8rj.jpg" alt="nxallSeason2">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#catalogo-carrousel" data-bs-slide="prev">
+                  <span class="icono-flechas carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#catalogo-carrousel" data-bs-slide="next">
+                  <span class="icono-flechas carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <div class="container-fluid catalogo-plus">
+                <a href=""><button type="button" class="boton-info btn btn-outline-light btn-lg">Catalogo completo</button></a>
+            </div>
+        </section>
+        <section id="artistas">
+            <div class="row">
+                <div class="artistas-caja col-lg-4">
+                    <img class="artistas-image" src="https://i.imgur.com/tnGXSFn.jpg" alt="marcosAmarilla">
+                    <h3 class="artistas-nombre">Marcos Amarilla</h3>
+                    <p class="artistas-texto">Dibujante de la obra Ecus. Ilustrador. Creador de historietas. Amante de los superheroes.</p>
+                </div>
+                <div class="artistas-caja col-lg-4">
+                    <img class="artistas-image" src="https://i.imgur.com/jHOyTmM.jpg" alt="kaoriTamashiro">
+                    <h3 class="artistas-nombre">Kaori Tamashiro</h3>
+                    <p class="artistas-texto">Autora de Fragmentos. Ilustradora. Profesora de dibujo. Dubjante de estilo manga. Amante de yu-gi-on y otros animes.</p>
+                </div>
+                <div class="artistas-caja col-lg-4">
+                    <img class="artistas-image" src="https://i.imgur.com/9gDAqe3.jpg" alt="matiasSanchez">
+                    <h3 class="artistas-nombre">Matías Sanchez</h3>
+                    <p class="artistas-texto">Autor de El fabuloso 2019 amarillo y Poesia barata para viajeros apresurados. Escritor. Pensador de nuestras sociedades.</p>
+                </div>
+            </div>
+            <div class="container-fluid artistas-plus">
+                <a href=""><button type="button" class="boton-info btn btn-outline-dark btn-lg">Mas artistas</button></a>
+            </div>
+        </section>
+        <section id="suscripcion">
+            <img class="suscripcion-logo" src="https://i.imgur.com/pEJvhPp.png" alt="logoSuscripcion">
+            <div class="row suscripcion-caja">
+                <div class="col-lg-6">
+                    <h2 class="suscripcion-texto">Brinda tu apoyo a la editorial y sus artistas en su crecimiento siendo miembro y recibe beneficios especiales junto a material exclusivo todos los meses. Se parte de la iniciativa de la boina.</h2>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row niveles suscripcion-nivel1">
+                        <div class="col">
+                            <i class="icono-suscripcion fas fa-certificate fa-3x"></i>
+                            <span class="niveles-texto">NIVEL 1: Mención.</span>
+                        </div>
+                    </div>
+                    <div class="row niveles suscripcion-nivel2">
+                        <div class="col">
+                            <i class="icono-suscripcion fas fa-book fa-3x"></i>
+                            <span class="niveles-texto">NIVEL 2: 10% Descuento.</span>
+                        </div>
+                    </div>
+                    <div class="row niveles suscripcion-nivel3">
+                        <div class="col">
+                            <i class="icono-suscripcion fas fa-truck fa-3x"></i>
+                            <span class="niveles-texto">NIVEL 3: Envío gratis (Argentina).</span>
+                        </div>
+                    </div>
+                    <div class="row niveles suscripcion-nivel4">
+                        <div class="col">
+                            <i class="icono-suscripcion fas fa-tag fa-3x"></i>
+                            <span class="niveles-texto">NIVEL 4: 20% Descuento.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid suscripcion-plus">
+                <a href=""><button type="button" class="boton-info btn btn-outline-dark btn-lg">Planes completos</button></a>
+            </div>
+        </section>
+        <section id="comiquerias">
+            <div class="row">
+                <div class="artistas-caja col-lg-4">
+                    <img class="comiquerias-image" src="https://i.imgur.com/ahizSSQ.png" alt="capitanBarato" width="200">
+                </div>
+                <div class="artistas-caja col-lg-4">
+                    <img class="comiquerias-image" src="https://i.imgur.com/olhIg3g.png" alt="laGalera" width="200">
+                </div>
+                <div class="artistas-caja col-lg-4">
+                    <img class="comiquerias-image" src="https://i.imgur.com/ERYTrZ7.png" alt="puroComic" width="200">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h3 class="comiquerias-texto">Pueden conseguir todos nuestros títulos en las comiquerías mas conocidas y surtidas de Argentina. Al mismo tiempo funcionan de punto de retiro para preventas. Sumando mas locales todos los meses.</h3>
+                </div>
+            </div>
+            <div class="container-fluid artistas-plus">
+                <a href=""><button type="button" class="boton-info btn btn-outline-dark btn-lg">Lista locales</button></a>
+            </div>
+        </section>
+        <section id="envios">
+            <h1 class="envios-titulo">Envíos</h1>
+            <div class="container-fluid envios-caja">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h2 class="envios-texto">Llegamos a todas las regiones de la argentina con rapidez y eficiencia.</h2>
+                    </div>
+                    <div class="col-lg-6">
+                        <i class="icono-envios fas fa-shipping-fast fa-9x"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
 </body>
