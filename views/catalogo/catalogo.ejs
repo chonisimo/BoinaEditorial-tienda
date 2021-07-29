@@ -1,22 +1,30 @@
 <head>
-    <link rel="stylesheet" href="/public/stylesheets/style-catalogo.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-compatible" content="ie=edge">
+    <!-- CSS stylesheets-->
+    <link rel="stylesheet" href="/public/stylesheets/style-catalogo2.css">
 </head>
-<main>
-    <!-- <div class="aviso">
-        <img class="alerta" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIHN0eWxlPSJmaWxsOiM0OTVBNzk7IiBkPSJNNTAxLjQ2MSwzODMuNzk5TDMyMC41MDEsNTEuNDAxQzMwNi43LDI4LjYsMjgyLjcsMTQuOCwyNTYsMTQuOHMtNTAuNywxMy44LTY0LjUwMSwzNi42MDENCglMMTAuNTM5LDM4My43OTlDLTMuMjU5LDQwNy41MDEtMy41Niw0MzUuNzAxLDkuOTQxLDQ1OS40YzEzLjQ5OSwyMy42OTksMzcuNzk4LDM3LjgsNjUuMDk5LDM3LjhoMzYxLjkyDQoJYzI3LjMwMSwwLDUxLjYwMS0xNC4xMDEsNjUuMDk5LTM3LjhDNTE1LjU2LDQzNS43MDEsNTE1LjI1OSw0MDcuNTAxLDUwMS40NjEsMzgzLjc5OXoiLz4NCjxwYXRoIHN0eWxlPSJmaWxsOiM0MjUxNkQ7IiBkPSJNNTAyLjA1OSw0NTkuNGMtMTMuNDk5LDIzLjY5OS0zNy43OTgsMzcuOC02NS4wOTksMzcuOEgyNTZWMTQuOGMyNi43LDAsNTAuNywxMy44MDEsNjQuNTAxLDM2LjYwMQ0KCUw1MDEuNDYxLDM4My44QzUxNS4yNTksNDA3LjUwMSw1MTUuNTYsNDM1LjcwMSw1MDIuMDU5LDQ1OS40eiIvPg0KPHBhdGggc3R5bGU9ImZpbGw6I0ZGREUzMzsiIGQ9Ik00NzUuNjYxLDM5OS4xTDI5NC42OTksNjYuNjk5QzI4Ni42MDEsNTIuOSwyNzEuOTAxLDQ0LjgsMjU2LDQ0LjhzLTMwLjYwMSw4LjEwMS0zOC42OTksMjEuODk5DQoJTDM2LjMzOSwzOTkuMWMtOC4zOTksMTQuMTAxLTguMzk5LDMxLjE5OS0wLjI5OCw0NS4zYzguMDk5LDE0LjM5OSwyMi43OTgsMjIuOCwzOSwyMi44aDM2MS45MmMxNi4yMDEsMCwzMC45MDEtOC40MDEsMzktMjIuOA0KCUM0ODQuMDYsNDMwLjI5OSw0ODQuMDYsNDEzLjIwMSw0NzUuNjYxLDM5OS4xeiIvPg0KPHBhdGggc3R5bGU9ImZpbGw6I0ZGQkMzMzsiIGQ9Ik00NzUuOTYsNDQ0LjRjLTguMDk5LDE0LjM5OS0yMi43OTgsMjIuOC0zOSwyMi44SDI1NlY0NC44YzE1LjkwMSwwLDMwLjYwMSw4LjEwMSwzOC42OTksMjEuODk5DQoJTDQ3NS42NjEsMzk5LjFDNDg0LjA2LDQxMy4yMDEsNDg0LjA2LDQzMC4yOTksNDc1Ljk2LDQ0NC40eiIvPg0KPGc+DQoJPHBhdGggc3R5bGU9ImZpbGw6IzQ5NUE3OTsiIGQ9Ik0yNTYsNDM3LjJjLTE2LjUzOCwwLTMwLTEzLjQ2Mi0zMC0zMHMxMy40NjItMzAsMzAtMzBzMzAsMTMuNDYyLDMwLDMwUzI3Mi41MzgsNDM3LjIsMjU2LDQzNy4yeiIvPg0KCTxwYXRoIHN0eWxlPSJmaWxsOiM0OTVBNzk7IiBkPSJNMjg2LDMxNy4yYzAsMTYuNTM4LTEzLjQ2MiwzMC0zMCwzMHMtMzAtMTMuNDYyLTMwLTMwdi0xNTBjMC0xNi41MzgsMTMuNDYyLTMwLDMwLTMwDQoJCXMzMCwxMy40NjIsMzAsMzBWMzE3LjJ6Ii8+DQo8L2c+DQo8Zz4NCgk8cGF0aCBzdHlsZT0iZmlsbDojNDI1MTZEOyIgZD0iTTI4Niw0MDcuMmMwLTE2LjUzOC0xMy40NjItMzAtMzAtMzB2NjBDMjcyLjUzOCw0MzcuMiwyODYsNDIzLjczOCwyODYsNDA3LjJ6Ii8+DQoJPHBhdGggc3R5bGU9ImZpbGw6IzQyNTE2RDsiIGQ9Ik0yODYsMzE3LjJ2LTE1MGMwLTE2LjUzOC0xMy40NjItMzAtMzAtMzB2MjEwQzI3Mi41MzgsMzQ3LjIsMjg2LDMzMy43MzgsMjg2LDMxNy4yeiIvPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo=" />
-        <p>En el carrito se puede ver los productos sumados pero no se puede comprar.</p>
-        <img class="alerta" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIHN0eWxlPSJmaWxsOiM0OTVBNzk7IiBkPSJNNTAxLjQ2MSwzODMuNzk5TDMyMC41MDEsNTEuNDAxQzMwNi43LDI4LjYsMjgyLjcsMTQuOCwyNTYsMTQuOHMtNTAuNywxMy44LTY0LjUwMSwzNi42MDENCglMMTAuNTM5LDM4My43OTlDLTMuMjU5LDQwNy41MDEtMy41Niw0MzUuNzAxLDkuOTQxLDQ1OS40YzEzLjQ5OSwyMy42OTksMzcuNzk4LDM3LjgsNjUuMDk5LDM3LjhoMzYxLjkyDQoJYzI3LjMwMSwwLDUxLjYwMS0xNC4xMDEsNjUuMDk5LTM3LjhDNTE1LjU2LDQzNS43MDEsNTE1LjI1OSw0MDcuNTAxLDUwMS40NjEsMzgzLjc5OXoiLz4NCjxwYXRoIHN0eWxlPSJmaWxsOiM0MjUxNkQ7IiBkPSJNNTAyLjA1OSw0NTkuNGMtMTMuNDk5LDIzLjY5OS0zNy43OTgsMzcuOC02NS4wOTksMzcuOEgyNTZWMTQuOGMyNi43LDAsNTAuNywxMy44MDEsNjQuNTAxLDM2LjYwMQ0KCUw1MDEuNDYxLDM4My44QzUxNS4yNTksNDA3LjUwMSw1MTUuNTYsNDM1LjcwMSw1MDIuMDU5LDQ1OS40eiIvPg0KPHBhdGggc3R5bGU9ImZpbGw6I0ZGREUzMzsiIGQ9Ik00NzUuNjYxLDM5OS4xTDI5NC42OTksNjYuNjk5QzI4Ni42MDEsNTIuOSwyNzEuOTAxLDQ0LjgsMjU2LDQ0LjhzLTMwLjYwMSw4LjEwMS0zOC42OTksMjEuODk5DQoJTDM2LjMzOSwzOTkuMWMtOC4zOTksMTQuMTAxLTguMzk5LDMxLjE5OS0wLjI5OCw0NS4zYzguMDk5LDE0LjM5OSwyMi43OTgsMjIuOCwzOSwyMi44aDM2MS45MmMxNi4yMDEsMCwzMC45MDEtOC40MDEsMzktMjIuOA0KCUM0ODQuMDYsNDMwLjI5OSw0ODQuMDYsNDEzLjIwMSw0NzUuNjYxLDM5OS4xeiIvPg0KPHBhdGggc3R5bGU9ImZpbGw6I0ZGQkMzMzsiIGQ9Ik00NzUuOTYsNDQ0LjRjLTguMDk5LDE0LjM5OS0yMi43OTgsMjIuOC0zOSwyMi44SDI1NlY0NC44YzE1LjkwMSwwLDMwLjYwMSw4LjEwMSwzOC42OTksMjEuODk5DQoJTDQ3NS42NjEsMzk5LjFDNDg0LjA2LDQxMy4yMDEsNDg0LjA2LDQzMC4yOTksNDc1Ljk2LDQ0NC40eiIvPg0KPGc+DQoJPHBhdGggc3R5bGU9ImZpbGw6IzQ5NUE3OTsiIGQ9Ik0yNTYsNDM3LjJjLTE2LjUzOCwwLTMwLTEzLjQ2Mi0zMC0zMHMxMy40NjItMzAsMzAtMzBzMzAsMTMuNDYyLDMwLDMwUzI3Mi41MzgsNDM3LjIsMjU2LDQzNy4yeiIvPg0KCTxwYXRoIHN0eWxlPSJmaWxsOiM0OTVBNzk7IiBkPSJNMjg2LDMxNy4yYzAsMTYuNTM4LTEzLjQ2MiwzMC0zMCwzMHMtMzAtMTMuNDYyLTMwLTMwdi0xNTBjMC0xNi41MzgsMTMuNDYyLTMwLDMwLTMwDQoJCXMzMCwxMy40NjIsMzAsMzBWMzE3LjJ6Ii8+DQo8L2c+DQo8Zz4NCgk8cGF0aCBzdHlsZT0iZmlsbDojNDI1MTZEOyIgZD0iTTI4Niw0MDcuMmMwLTE2LjUzOC0xMy40NjItMzAtMzAtMzB2NjBDMjcyLjUzOCw0MzcuMiwyODYsNDIzLjczOCwyODYsNDA3LjJ6Ii8+DQoJPHBhdGggc3R5bGU9ImZpbGw6IzQyNTE2RDsiIGQ9Ik0yODYsMzE3LjJ2LTE1MGMwLTE2LjUzOC0xMy40NjItMzAtMzAtMzB2MjEwQzI3Mi41MzgsMzQ3LjIsMjg2LDMzMy43MzgsMjg2LDMxNy4yeiIvPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo=" />
-    </div> -->
-    <h1>catalogo</h1>
-    <div class="titulos" id="titulos"> 
-            <% for (var i=0; i < libros.length; i++) { %>
-                <div class="carta">
-                    <a href="/catalogo/libro/<%= i+1 %>"><h3><%= libros[i].titulo %></h3></a>
-                    <a href="/catalogo/libro/<%= i+1 %>"><img class="tapas" src="<%= libros[i].tapa %>"></a>
-                    <p>$<%= libros[i].precio %></p>
-                    <p><%= libros[i].tipo %></p>
-                    <p><%= libros[i].publico %></p>
-                </div>
-            <% } %>
+<body>
+    <div class="row">
+        <div class="col descripcion-catalogo">
+            <h2 class="descripcion-texto">En nuestro catálogo de productos podrás encontrar historietas, novelas, cuentos, poesías y libros de arte de una gran 
+                variedad de géneros para todas las edades. Nuestro objetivo es satisfacer las necesidades de un abanico amplio de publico 
+                al mismo tiempo que incentivamos la curiosidad de probar cosas nuevas a cada vez más gente. Mientras cuidamos el bolsillo 
+                con precios económicos con ediciones de calidad.</h2>
+        </div>
     </div>
-</main>
+    <div class="row catalogo-libros">
+        <% for (var i=0; i < libros.length; i++) { %>
+            <div class="col-lg-3 col-md-4 col-sm-6 titulos">
+                <hr>
+                <a href="/catalogo/libro/<%= i+1 %>"><h3 class="libro-nombre"><%= libros[i].titulo %></h3></a>
+                <a href="/catalogo/libro/<%= i+1 %>"><img class="tapas" src="<%= libros[i].tapa %>"></a>
+                <p>$<%= libros[i].precio %></p>
+                <p><%= libros[i].tipo %></p>
+                <p><%= libros[i].genero %> </p>
+                <p><%= libros[i].publico %></p>
+            </div>
+        <% } %>
+    </div>
+</body>
