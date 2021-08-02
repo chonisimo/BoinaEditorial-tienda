@@ -7,7 +7,7 @@ body {
 /* descripcion del catalogo */
 
 .descripcion-catalogo {
-    padding: 7% 15% 5%;
+    padding: 3% 15%;
 }
 
 .descripcion-texto {
@@ -29,7 +29,7 @@ body {
 hr {
     color:#062e0b;
     border: 2px solid #062e0b;
-    width: 50%;
+    width: 65%;
     margin: 0.5rem auto;
 }
 
@@ -39,28 +39,31 @@ a {
 
 .libro-nombre {
     color: #000;
-    width: 50%;
+    width: 65%;
     font-size: 1.5rem;
     font-weight: bold;
     margin: 0.2rem auto;
+    margin-bottom: 0;
 }
 
 .tapas {
-    width: 50%;
-    margin-bottom: 5px;
+    width: 65%;
+    margin-bottom: 10px;
 }
 
 p {
-    color: #000;
-    width: 50%;
+    color: #fff;
+    width: 65%;
     font-size: 1.2rem;
     font-weight: bold;
-    margin: 0.2rem auto;
+    margin: 0 auto;
+    background-color: #0c4613;
+    border: 4px solid #000;
 }
 
 @media screen and (min-width: 356px) and (orientation: portrait) {
     .descripcion-texto {
-        font-size: 2.2rem;
+        font-size: 2rem;
         line-height: 1.2;
     }
 

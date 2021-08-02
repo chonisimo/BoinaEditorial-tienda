@@ -1,13 +1,48 @@
 <head>
-    <link rel="stylesheet" href="/public/stylesheets/style-libro.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-compatible" content="ie=edge">
+    <!-- CSS stylesheets-->
+    <link rel="stylesheet" href="/public/stylesheets/style-libro2.css">
 </head>
-<main>
-    <!-- <div class="aviso">
-        <img class="alerta" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIHN0eWxlPSJmaWxsOiM0OTVBNzk7IiBkPSJNNTAxLjQ2MSwzODMuNzk5TDMyMC41MDEsNTEuNDAxQzMwNi43LDI4LjYsMjgyLjcsMTQuOCwyNTYsMTQuOHMtNTAuNywxMy44LTY0LjUwMSwzNi42MDENCglMMTAuNTM5LDM4My43OTlDLTMuMjU5LDQwNy41MDEtMy41Niw0MzUuNzAxLDkuOTQxLDQ1OS40YzEzLjQ5OSwyMy42OTksMzcuNzk4LDM3LjgsNjUuMDk5LDM3LjhoMzYxLjkyDQoJYzI3LjMwMSwwLDUxLjYwMS0xNC4xMDEsNjUuMDk5LTM3LjhDNTE1LjU2LDQzNS43MDEsNTE1LjI1OSw0MDcuNTAxLDUwMS40NjEsMzgzLjc5OXoiLz4NCjxwYXRoIHN0eWxlPSJmaWxsOiM0MjUxNkQ7IiBkPSJNNTAyLjA1OSw0NTkuNGMtMTMuNDk5LDIzLjY5OS0zNy43OTgsMzcuOC02NS4wOTksMzcuOEgyNTZWMTQuOGMyNi43LDAsNTAuNywxMy44MDEsNjQuNTAxLDM2LjYwMQ0KCUw1MDEuNDYxLDM4My44QzUxNS4yNTksNDA3LjUwMSw1MTUuNTYsNDM1LjcwMSw1MDIuMDU5LDQ1OS40eiIvPg0KPHBhdGggc3R5bGU9ImZpbGw6I0ZGREUzMzsiIGQ9Ik00NzUuNjYxLDM5OS4xTDI5NC42OTksNjYuNjk5QzI4Ni42MDEsNTIuOSwyNzEuOTAxLDQ0LjgsMjU2LDQ0LjhzLTMwLjYwMSw4LjEwMS0zOC42OTksMjEuODk5DQoJTDM2LjMzOSwzOTkuMWMtOC4zOTksMTQuMTAxLTguMzk5LDMxLjE5OS0wLjI5OCw0NS4zYzguMDk5LDE0LjM5OSwyMi43OTgsMjIuOCwzOSwyMi44aDM2MS45MmMxNi4yMDEsMCwzMC45MDEtOC40MDEsMzktMjIuOA0KCUM0ODQuMDYsNDMwLjI5OSw0ODQuMDYsNDEzLjIwMSw0NzUuNjYxLDM5OS4xeiIvPg0KPHBhdGggc3R5bGU9ImZpbGw6I0ZGQkMzMzsiIGQ9Ik00NzUuOTYsNDQ0LjRjLTguMDk5LDE0LjM5OS0yMi43OTgsMjIuOC0zOSwyMi44SDI1NlY0NC44YzE1LjkwMSwwLDMwLjYwMSw4LjEwMSwzOC42OTksMjEuODk5DQoJTDQ3NS42NjEsMzk5LjFDNDg0LjA2LDQxMy4yMDEsNDg0LjA2LDQzMC4yOTksNDc1Ljk2LDQ0NC40eiIvPg0KPGc+DQoJPHBhdGggc3R5bGU9ImZpbGw6IzQ5NUE3OTsiIGQ9Ik0yNTYsNDM3LjJjLTE2LjUzOCwwLTMwLTEzLjQ2Mi0zMC0zMHMxMy40NjItMzAsMzAtMzBzMzAsMTMuNDYyLDMwLDMwUzI3Mi41MzgsNDM3LjIsMjU2LDQzNy4yeiIvPg0KCTxwYXRoIHN0eWxlPSJmaWxsOiM0OTVBNzk7IiBkPSJNMjg2LDMxNy4yYzAsMTYuNTM4LTEzLjQ2MiwzMC0zMCwzMHMtMzAtMTMuNDYyLTMwLTMwdi0xNTBjMC0xNi41MzgsMTMuNDYyLTMwLDMwLTMwDQoJCXMzMCwxMy40NjIsMzAsMzBWMzE3LjJ6Ii8+DQo8L2c+DQo8Zz4NCgk8cGF0aCBzdHlsZT0iZmlsbDojNDI1MTZEOyIgZD0iTTI4Niw0MDcuMmMwLTE2LjUzOC0xMy40NjItMzAtMzAtMzB2NjBDMjcyLjUzOCw0MzcuMiwyODYsNDIzLjczOCwyODYsNDA3LjJ6Ii8+DQoJPHBhdGggc3R5bGU9ImZpbGw6IzQyNTE2RDsiIGQ9Ik0yODYsMzE3LjJ2LTE1MGMwLTE2LjUzOC0xMy40NjItMzAtMzAtMzB2MjEwQzI3Mi41MzgsMzQ3LjIsMjg2LDMzMy43MzgsMjg2LDMxNy4yeiIvPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo=" />
-        <p>En el carrito se puede ver los productos sumados pero no se puede comprar.</p>
-        <img class="alerta" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIHN0eWxlPSJmaWxsOiM0OTVBNzk7IiBkPSJNNTAxLjQ2MSwzODMuNzk5TDMyMC41MDEsNTEuNDAxQzMwNi43LDI4LjYsMjgyLjcsMTQuOCwyNTYsMTQuOHMtNTAuNywxMy44LTY0LjUwMSwzNi42MDENCglMMTAuNTM5LDM4My43OTlDLTMuMjU5LDQwNy41MDEtMy41Niw0MzUuNzAxLDkuOTQxLDQ1OS40YzEzLjQ5OSwyMy42OTksMzcuNzk4LDM3LjgsNjUuMDk5LDM3LjhoMzYxLjkyDQoJYzI3LjMwMSwwLDUxLjYwMS0xNC4xMDEsNjUuMDk5LTM3LjhDNTE1LjU2LDQzNS43MDEsNTE1LjI1OSw0MDcuNTAxLDUwMS40NjEsMzgzLjc5OXoiLz4NCjxwYXRoIHN0eWxlPSJmaWxsOiM0MjUxNkQ7IiBkPSJNNTAyLjA1OSw0NTkuNGMtMTMuNDk5LDIzLjY5OS0zNy43OTgsMzcuOC02NS4wOTksMzcuOEgyNTZWMTQuOGMyNi43LDAsNTAuNywxMy44MDEsNjQuNTAxLDM2LjYwMQ0KCUw1MDEuNDYxLDM4My44QzUxNS4yNTksNDA3LjUwMSw1MTUuNTYsNDM1LjcwMSw1MDIuMDU5LDQ1OS40eiIvPg0KPHBhdGggc3R5bGU9ImZpbGw6I0ZGREUzMzsiIGQ9Ik00NzUuNjYxLDM5OS4xTDI5NC42OTksNjYuNjk5QzI4Ni42MDEsNTIuOSwyNzEuOTAxLDQ0LjgsMjU2LDQ0LjhzLTMwLjYwMSw4LjEwMS0zOC42OTksMjEuODk5DQoJTDM2LjMzOSwzOTkuMWMtOC4zOTksMTQuMTAxLTguMzk5LDMxLjE5OS0wLjI5OCw0NS4zYzguMDk5LDE0LjM5OSwyMi43OTgsMjIuOCwzOSwyMi44aDM2MS45MmMxNi4yMDEsMCwzMC45MDEtOC40MDEsMzktMjIuOA0KCUM0ODQuMDYsNDMwLjI5OSw0ODQuMDYsNDEzLjIwMSw0NzUuNjYxLDM5OS4xeiIvPg0KPHBhdGggc3R5bGU9ImZpbGw6I0ZGQkMzMzsiIGQ9Ik00NzUuOTYsNDQ0LjRjLTguMDk5LDE0LjM5OS0yMi43OTgsMjIuOC0zOSwyMi44SDI1NlY0NC44YzE1LjkwMSwwLDMwLjYwMSw4LjEwMSwzOC42OTksMjEuODk5DQoJTDQ3NS42NjEsMzk5LjFDNDg0LjA2LDQxMy4yMDEsNDg0LjA2LDQzMC4yOTksNDc1Ljk2LDQ0NC40eiIvPg0KPGc+DQoJPHBhdGggc3R5bGU9ImZpbGw6IzQ5NUE3OTsiIGQ9Ik0yNTYsNDM3LjJjLTE2LjUzOCwwLTMwLTEzLjQ2Mi0zMC0zMHMxMy40NjItMzAsMzAtMzBzMzAsMTMuNDYyLDMwLDMwUzI3Mi41MzgsNDM3LjIsMjU2LDQzNy4yeiIvPg0KCTxwYXRoIHN0eWxlPSJmaWxsOiM0OTVBNzk7IiBkPSJNMjg2LDMxNy4yYzAsMTYuNTM4LTEzLjQ2MiwzMC0zMCwzMHMtMzAtMTMuNDYyLTMwLTMwdi0xNTBjMC0xNi41MzgsMTMuNDYyLTMwLDMwLTMwDQoJCXMzMCwxMy40NjIsMzAsMzBWMzE3LjJ6Ii8+DQo8L2c+DQo8Zz4NCgk8cGF0aCBzdHlsZT0iZmlsbDojNDI1MTZEOyIgZD0iTTI4Niw0MDcuMmMwLTE2LjUzOC0xMy40NjItMzAtMzAtMzB2NjBDMjcyLjUzOCw0MzcuMiwyODYsNDIzLjczOCwyODYsNDA3LjJ6Ii8+DQoJPHBhdGggc3R5bGU9ImZpbGw6IzQyNTE2RDsiIGQ9Ik0yODYsMzE3LjJ2LTE1MGMwLTE2LjUzOC0xMy40NjItMzAtMzAtMzB2MjEwQzI3Mi41MzgsMzQ3LjIsMjg2LDMzMy43MzgsMjg2LDMxNy4yeiIvPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo=" />
-    </div> -->
-    <h1 class="nombre-producto"><%= libros.titulo %></h1>
+<body>
+    <div class="row producto-datos">
+        <div class="col-lg-6 imagen-tapa">
+            <img class="tapas" src="<%= libros.tapa %>" alt="">
+        </div>
+        <div class="col-lg-6 datos-libro">
+            <h1 class="nombre-producto"><%= libros.titulo %></h1>
+            <h2 class="nombre-autor"><%= libros.autor %></h2>
+            <h2 class="precio">$<%= libros.precio %></h2>
+            <p class="genero"><%= libros.genero %></p>
+            <p class="tipo"><%= libros.tipo %></p>
+            <p class="publico"><%= libros.publico %></p>
+            <p class="medida"><%= libros.tamaño %>cm</p>
+        </div>
+    </div>
+    <div class="row justify-content-start paginas-muestra">
+        <div class="col-lg-2 pagina">
+            <a href="<%= libros.pagina1 %>" target="blank"><img class="paginas-image" src="<%= libros.pagina1 %>" alt=""></a>
+        </div>
+        <div class="col-lg-2 pagina">
+            <a href="<%= libros.pagina2 %>" target="blank"><img class="paginas-image" src="<%= libros.pagina2 %>" alt=""></a>
+        </div>
+        <div class="col-lg-2 pagina">
+            <a href="<%= libros.pagina3 %>" target="blank"><img class="paginas-image" src="<%= libros.pagina3 %>" alt=""></a>
+        </div>
+        <div class="col-lg-2 pagina">
+            <a href="<%= libros.pagina4 %>" target="blank"><img class="paginas-image" src="<%= libros.pagina4 %>" alt=""></a>
+        </div>
+        <div class="col-lg-2 pagina">
+            <a href="<%= libros.pagina5 %>" target="blank"><img class="paginas-image" src="<%= libros.pagina5 %>" alt=""></a>
+        </div>
+    </div>
+    <div class="row caja-descripcion">
+        <div class="col">
+            <p class="descripcion"><%= libros.descripcion %> </p>
+        </div>
+    </div>
+    <!-- <h1 class="nombre-producto"><%= libros.titulo %></h1>
     <div class="presentacion">
         <img class="tapas" src="<%= libros.tapa %>" alt="">
         <div class="informacion">
@@ -16,7 +51,6 @@
             <form action="/carrito" method="POST" class="info-form">
                 <p class="stock">Stock: <%= libros.stock %></p>
                 <input type="number" id="identificacion" name="identificacion" value="<%= libros.id %>">
-                <!-- <button class="boton" type="submit">Agregar carrito</button> -->
             </form>
         </div>
     </div>
@@ -34,5 +68,5 @@
         <p>Tipo: <%= libros.tipo %> </p>
         <p>Publico: <%= libros.publico %> </p>
         <p>Tamaño: <%= libros.tamaño %>cm </p>
-    </div>
-</main>
+    </div> -->
+</body>

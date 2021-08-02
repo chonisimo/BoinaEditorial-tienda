@@ -1,14 +1,18 @@
 <head>
     <link rel="stylesheet" href="/public/stylesheets/style-buscador.css">
 </head>
-<main>
-    <h1>resultados</h1>
-    <div class="titulos" id="titulos"> 
+<body>
+    <div class="row catalogo-libros">
         <% for (var i=0; i < libros.length; i++) { %>
-            <div class="carta">
-                <a href="/catalogo/libro/<%= libros[i].id %>"><h3><%= libros[i].titulo %></h3></a>
-                <a href="/catalogo/libro/<%= libros[i].id %>"><img class="tapas" src="<%= libros[i].tapa %>"></a>
+            <div class="col-lg-3 col-md-4 col-sm-6 titulos">
+                <hr>
+                <a href="/catalogo/libro/<%= i+1 %>"><h3 class="libro-nombre"><%= libros[i].titulo %></h3></a>
+                <a href="/catalogo/libro/<%= i+1 %>"><img class="tapas" src="<%= libros[i].tapa %>"></a>
+                <p>$<%= libros[i].precio %></p>
+                <p><%= libros[i].tipo %></p>
+                <p><%= libros[i].genero %> </p>
+                <p><%= libros[i].publico %></p>
             </div>
         <% } %>
     </div>
-</main>
+</body>

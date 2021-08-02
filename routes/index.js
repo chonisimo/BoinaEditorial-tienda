@@ -35,7 +35,7 @@ indexRouter.get('/catalogo', (req, res, next) => {
         } else {
             res.render('catalogo/catalogo', {libros: libros.map(libro => {
                 return libro;
-            }), carro: carro.length})
+            })})
         }
     });
 });
@@ -48,7 +48,7 @@ indexRouter.get('/catalogo/buscador', (req, res, next) => {
         } else {
             res.render(`catalogo/buscador`, {libros: libros.map(libro => {
                 return libro
-            }), carro: carro.length}); 
+            })}); 
         }
     })
 });
@@ -59,7 +59,7 @@ indexRouter.get('/catalogo/libro/:librosId', (req, res, next) => {
         if(err) {
             next(err);
         } else {
-            res.render(`catalogo/libro`, {libros: libros, carro: carro.length}); 
+            res.render(`catalogo/libro`, {libros: libros}); 
         }
     });
 });

@@ -1,78 +1,61 @@
-main {
+body {
+    background-color: #cef0d8;
+    font-family: 'Work Sans', sans-serif;
     text-align: center;
-    font-family: 'Inter', sans-serif;
-    background-color: blueviolet;
 }
 
-h1 {
-    color: rgb(255, 255, 255);
-    text-transform: uppercase;
-    text-decoration: underline;
+/* fichas de titulos */
+
+.catalogo-libros {
+    padding: 3% 15%;
 }
 
 .titulos {
-    width: 750px;
-    height: auto;
-    display: inline-block;
+    padding-bottom: 2%;
 }
 
-.carta {
-    width: 220px;
-    height: auto;
-    display: inline-block;
+hr {
+    color:#062e0b;
+    border: 2px solid #062e0b;
+    width: 65%;
+    margin: 0.5rem auto;
 }
 
-.carta a {
+a {
     text-decoration: none;
 }
 
-.carta h3 {
-    color: rgb(242, 255, 228);
-    margin-bottom: 4px;
+.libro-nombre {
+    color: #fff;
+    width: 65%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0.2rem auto;
+    margin-bottom: 0;
+    background-color:#0c4613;
 }
 
 .tapas {
-    width: 180px;
-    height: auto;
-    margin: 2px 8px 8px 8px;
-    border: 8px solid rgb(56, 56, 56);
-    border-radius: 8px;
-    transition: linear 0.2s;
+    width: 65%;
+    margin-bottom: 10px;
 }
 
-.tapas:hover {
-    border: 8px solid rgb(241, 252, 240);
+p {
+    color: #fff;
+    width: 65%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0 auto;
+    background-color: #0c4613;
+    border: 4px solid #000;
 }
 
-@media screen and (max-width: 455px) and (orientation: portrait) {
-    main {
-        width: 350px;
-        height: auto;
+@media screen and (min-width: 356px) and (orientation: portrait) {
+    .libro-nombre {
+        font-size: 1.2rem;
     }
 
-    .titulos {
-        width: 330px;
-        height: auto;
-    }
-
-    .carta {
-        width: 140px;
-        height: auto;
-    }
-
-    .carta h3 {
-        margin: 0px 5px 4px 5px;
-        font-size: 16px;
-    }
-
-    .tapas {
-        width: 120px;
-        height: auto;
-        border: 4px solid rgb(56, 56, 56);
-        margin: 2px 8px 8px 8px;
-    }
-
-    .tapas:hover {
-        border: 4px solid rgb(241, 252, 240);
+    p {
+        font-size: 1.1rem;
     }
 }
