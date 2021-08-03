@@ -74,4 +74,8 @@ p {
     p {
         font-size: 1.1rem;
     }
+
+    hr {
+        margin-top: 25px;
+    }
 }

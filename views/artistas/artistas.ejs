@@ -6,15 +6,118 @@
     <link rel="stylesheet" href="/public/stylesheets/style-artistas.css">
 </head>
 <body>
-    <div class="row">
-        <div class="col-2">
-            <img src="" alt="">
+    <div class="row caja-artista">
+        <div class="col-lg-2 caja-foto">
+            <img class="foto-artista" src="<%= libros[0].fotoautor1 %> " alt="fotoChona">
         </div>
-        <div class="col-10">
-            <h1></h1>
-            <p></p>
+        <div class="col-lg-10">
+            <h1 class="nombre-artista"><%= libros[0].autor %></h1>
+            <p class="biografia-artista"><%= libros[0].biografia1 %></p>
             <h2>Obras publicadas</h2>
-            <a href=""><img src="" alt=""></a>
+            <a href="/catalogo/libro/<%= libros[0].id %>"><img class="obras" src="<%= libros[0].tapa %>" alt="chonasComics1"></a>
+            <a href="/catalogo/libro/<%= libros[6].id %>"><img class="obras"src="<%= libros[6].tapa %>" alt="nxallSeason1"></a>
+            <a href="/catalogo/libro/<%= libros[9].id %>"><img class="obras"src="<%= libros[9].tapa %>" alt="froggyMarket1"></a>
+        </div>
+    </div>
+    <div class="row caja-artista">
+        <hr>
+        <div class="col-lg-2 caja-foto">
+            <img class="foto-artista" src="<%= libros[10].fotoautor1 %> " alt="fotoKaori">
+        </div>
+        <div class="col-lg-10">
+            <h1 class="nombre-artista"><%= libros[10].autor %></h1>
+            <p class="biografia-artista"><%= libros[10].biografia1 %></p>
+            <h2>Obras publicadas</h2>
+            <a href="/catalogo/libro/<%= libros[10].id %>"><img class="obras" src="<%= libros[10].tapa %>" alt="fragmentos"></a>
+        </div>
+    </div>
+    <div class="row caja-artista">
+        <hr>
+        <div class="col-lg-2 caja-foto">
+            <img class="foto-artista" src="<%= libros[11].fotoautor1 %> " alt="fotoMarcosS">
+        </div>
+        <div class="col-lg-10">
+            <h1 class="nombre-artista"><%= libros[11].autor %></h1>
+            <p class="biografia-artista"><%= libros[11].biografia1 %></p>
+            <h2>Obras publicadas</h2>
+            <a href="/catalogo/libro/<%= libros[11].id %>"><img class="obras" src="<%= libros[11].tapa %>" alt="popWuj"></a>
+            <a href="/catalogo/libro/<%= libros[12].id %>"><img class="obras"src="<%= libros[12].tapa %>" alt="namaha"></a>
+            <a href="/catalogo/libro/<%= libros[13].id %>"><img class="obras"src="<%= libros[13].tapa %>" alt="elTio"></a>
+        </div>
+    </div>
+    <div class="row caja-artista">
+        <hr>
+        <div class="col-lg-2 caja-foto">
+            <img class="foto-artista" src="<%= libros[16].fotoautor1 %> " alt="fotoIanParr">
+        </div>
+        <div class="col-lg-10">
+            <h1 class="nombre-artista"><%= libros[16].autor %></h1>
+            <p class="biografia-artista"><%= libros[16].biografia1 %></p>
+            <h2>Obras publicadas</h2>
+            <a href="/catalogo/libro/<%= libros[16].id %>"><img class="obras" src="<%= libros[16].tapa %>" alt="voddom"></a>
+            <a href="/catalogo/libro/<%= libros[17].id %>"><img class="obras"src="<%= libros[17].tapa %>" alt="delta"></a>
+            <a href="/catalogo/libro/<%= libros[13].id %>"><img class="obras"src="<%= libros[13].tapa %>" alt="elTio"></a>
+        </div>
+    </div>
+    <div class="row caja-artista">
+        <hr>
+        <div class="col-lg-2 caja-foto">
+            <img class="foto-artista" src="<%= libros[14].fotoautor1 %> " alt="fotoMatias">
+        </div>
+        <div class="col-lg-10">
+            <h1 class="nombre-artista"><%= libros[14].autor %></h1>
+            <p class="biografia-artista"><%= libros[14].biografia1 %></p>
+            <h2>Obras publicadas</h2>
+            <a href="/catalogo/libro/<%= libros[14].id %>"><img class="obras" src="<%= libros[14].tapa %>" alt="poesiaBarata"></a>
+            <a href="/catalogo/libro/<%= libros[15].id %>"><img class="obras"src="<%= libros[15].tapa %>" alt="elFabuloso"></a>
+        </div>
+    </div>
+    <div class="row caja-artista">
+        <hr>
+        <div class="col-lg-2 caja-foto">
+            <img class="foto-artista" src="<%= libros[19].fotoautor1 %> " alt="fotoWalter">
+        </div>
+        <div class="col-lg-10">
+            <h1 class="nombre-artista"><%= libros[19].autor %></h1>
+            <p class="biografia-artista"><%= libros[19].biografia1 %></p>
+            <h2>Obras publicadas</h2>
+            <a href="/catalogo/libro/<%= libros[19].id %>"><img class="obras" src="<%= libros[19].tapa %>" alt="pachaQuilombo1"></a>
+        </div>
+    </div>
+    <div class="row caja-artista">
+        <hr>
+        <div class="col-lg-2 caja-foto">
+            <img class="foto-artista" src="<%= libros[20].fotoautor1 %> " alt="fotoAriel">
+        </div>
+        <div class="col-lg-10">
+            <h1 class="nombre-artista"><%= libros[20].autor %></h1>
+            <p class="biografia-artista"><%= libros[20].biografia1 %></p>
+            <h2>Obras publicadas</h2>
+            <a href="/catalogo/libro/<%= libros[20].id %>"><img class="obras" src="<%= libros[20].tapa %>" alt="ecusAbsoluto"></a>
+        </div>
+    </div>
+    <div class="row caja-artista">
+        <hr>
+        <div class="col-lg-2 caja-foto">
+            <img class="foto-artista" src="<%= libros[20].fotoautor2 %> " alt="fotoMarcosA">
+        </div>
+        <div class="col-lg-10">
+            <h1 class="nombre-artista"><%= libros[20].autor2 %></h1>
+            <p class="biografia-artista"><%= libros[20].biografia2 %></p>
+            <h2>Obras publicadas</h2>
+            <a href="/catalogo/libro/<%= libros[20].id %>"><img class="obras" src="<%= libros[20].tapa %>" alt="ecusAbsoluto"></a>
+        </div>
+    </div>
+    <div class="row caja-artista">
+        <hr>
+        <div class="col-lg-2 caja-foto">
+            <img class="foto-artista" src="<%= libros[21].fotoautor1 %> " alt="fotoDaniel">
+        </div>
+        <div class="col-lg-10">
+            <h1 class="nombre-artista"><%= libros[21].autor %></h1>
+            <p class="biografia-artista"><%= libros[21].biografia1 %></p>
+            <h2>Obras publicadas</h2>
+            <a href="/catalogo/libro/<%= libros[21].id %>"><img class="obras" src="<%= libros[21].tapa %>" alt="hanzelLegazpi"></a>
         </div>
     </div>
 </body>

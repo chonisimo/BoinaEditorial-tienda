@@ -73,7 +73,7 @@ h1 {
 .catalogo-titulo, .envios-titulo {
     text-transform: uppercase;
     text-decoration: underline;
-    padding: 7% 15% 0;
+    padding: 3% 15% 0;
 }
 
 .carousel-item, .suscripcion-caja {
@@ -98,7 +98,7 @@ h1 {
 }
 
 .catalogo-plus {
-    padding-bottom: 7%;
+    padding-bottom: 3%;
 }
 
 /* artistas */
@@ -127,7 +127,7 @@ h1 {
 .suscripcion-logo {
     width: 50%;
     display: block;
-    padding: 7% 15% 0;
+    padding: 3% 15% 0;
 }
 
 .niveles {
@@ -151,7 +151,7 @@ h1 {
 }
 
 .suscripcion-plus {
-    padding-bottom: 7%;
+    padding-bottom: 3%;
 }
 
 /* comiquerias */
@@ -180,7 +180,7 @@ h1 {
 }
 
 .envios-caja {
-    padding: 3% 15% 7%;
+    padding: 3% 15%;
 }
 
 .icono-envios {

@@ -1,0 +1,21 @@
+body {
+    background-color: #cef0d8;
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+}
+
+.cartel-construccion {
+    padding: 3% 15%;
+}
+
+.cartel-texto {
+    color: #fff;
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 1.2;
+    background-color: rgb(233, 10, 10);
+    border: 5px solid #000;
+    padding: 20px;
+    border-radius: 20px;
+    text-transform: uppercase;
+}

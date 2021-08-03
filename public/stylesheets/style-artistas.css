@@ -1,0 +1,82 @@
+body {
+    background-color: #cef0d8;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.caja-artista {
+    padding: 3% 15%;
+}
+
+.caja-foto {
+    text-align: center;
+}
+
+.foto-artista {
+    width: 80%;
+    border-radius: 50%;
+    margin-top: 15px;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 1.8rem;
+    text-decoration: underline;
+    margin-bottom: 15px;
+}
+
+p {
+    font-weight: 700;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    margin: 25px 0;
+}
+
+hr {
+    display: none;
+}
+
+.obras {
+    width: 15%;
+    margin-right: 10px;
+}
+
+@media screen and (min-width: 356px) and (orientation: portrait) {
+    body {
+        text-align: center;
+    }
+
+    .foto-artista {
+        width: 60%;
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin-top: 5px;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+        line-height: 1.3;
+    }
+
+    hr {
+        display: initial;
+        color:#062e0b;
+        border: 2px solid #062e0b;
+        margin: 0.5rem auto;
+    }
+
+    .obras {
+        width: 50%;
+        margin-bottom: 10px;
+    }
+};
