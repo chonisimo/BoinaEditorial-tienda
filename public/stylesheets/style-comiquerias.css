@@ -9,4 +9,53 @@ body {
 
 .imagen-comiqueria {
     text-align: center;
+    margin-top: 15px;
 }
+
+h1 {
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+
+hr {
+    display: none;
+}
+
+.datos-comiqueria {
+    margin: 20px 0;
+}
+
+a {
+    color: #000;
+}
+
+footer {
+    text-align: center;
+}
+
+@media screen and (min-width: 356px) and (orientation: portrait) {
+    body {
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin-top: 5px;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    hr {
+        display: initial;
+        color:#062e0b;
+        border: 2px solid #062e0b;
+        margin: 0.5rem auto;
+    }
+};

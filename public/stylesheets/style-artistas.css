@@ -45,6 +45,10 @@ hr {
     margin-right: 10px;
 }
 
+footer {
+    text-align: center;
+}
+
 @media screen and (min-width: 356px) and (orientation: portrait) {
     body {
         text-align: center;
