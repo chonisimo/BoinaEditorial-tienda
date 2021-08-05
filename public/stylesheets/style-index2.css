@@ -210,4 +210,8 @@ h1 {
         width: 80%;
         display: inline-flex;
     }
+
+    .comiquerias-image {
+        width: 50%;
+    }
 }
