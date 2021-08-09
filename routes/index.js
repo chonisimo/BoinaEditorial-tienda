@@ -22,7 +22,7 @@ indexRouter.param('librosId', (req, res, next, librosId) => {
 
 //Muestra la pagina de index
 indexRouter.get('/', (req, res, next) => {
-    db.all('SELECT * FROM Libros', (err, libros) => {
+    db.all('SELECT * FROM Noticias', (err, noticias) => {
         res.render('index');
     });
 });
@@ -92,24 +92,48 @@ indexRouter.get('/suscripciones/nivel2', (req, res, next) => {
     res.render('suscripciones/nivel2');
 });
 
-//muestra la pagina de suscripciones nivel 1
+//muestra la pagina de suscripciones nivel 3
 indexRouter.get('/suscripciones/nivel3', (req, res, next) => {
     res.render('suscripciones/nivel3');
 });
 
-//muestra la pagina de suscripciones nivel 1
+//muestra la pagina de suscripciones nivel 4
 indexRouter.get('/suscripciones/nivel4', (req, res, next) => {
     res.render('suscripciones/nivel4');
 });
 
-//muestra la pagina de suscripciones nivel 1
+//muestra la pagina de comiquerias
 indexRouter.get('/comiquerias', (req, res, next) => {
     res.render('comiquerias/comiquerias');
 });
 
-//muestra la pagina de suscripciones nivel 1
+//muestra la pagina de contacto
 indexRouter.get('/contacto', (req, res, next) => {
     res.render('contacto/contacto');
+});
+
+//muestra la pagina de novedades
+indexRouter.get('/novedades', (req, res, next) => {
+    db.all('SELECT * FROM Noticias', (err, noticias) => {
+        if(err) {
+            next(err);
+        } else {
+            res.render('novedades/novedades', {noticias: noticias.map(noticia => {
+                return noticia;
+            })})
+        }
+    });
+});
+
+//muestra la pagina de la noticia especifica
+indexRouter.get('/novedades/noticia/:noticiasId', (req, res, next) => {
+    db.get('SELECT * FROM Noticias WHERE Noticias.id = $noticiasId', {$noticiasId: req.params.noticiasId}, (err, noticiass) => {
+        if(err) {
+            next(err);
+        } else {
+            res.render(`novedades/noticia`, {noticias: noticiass}); 
+        }
+    });
 });
 
 module.exports = indexRouter;

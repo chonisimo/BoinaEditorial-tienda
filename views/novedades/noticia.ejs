@@ -1,0 +1,43 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-compatible" content="ie=edge">
+    <!-- CSS stylesheets-->
+    <link rel="stylesheet" href="/public/stylesheets/style-noticia.css">
+</head>
+<body>
+    <div class="row caja-noticia">
+        <div class="row cajas">
+            <div class="col titulo">
+                <h1><%= noticias.titulo %></h1>
+            </div>
+        </div>
+        <div class="row cajas">
+            <div class="col bajada">
+                <h3><%= noticias.bajada %></h3>
+            </div>
+        </div>
+        <div class="row cajas">
+            <div class="col fecha">
+                <p><%= noticias.fecha %> </p>
+            </div>
+        </div>
+        <div class="row cajas">
+            <div class="col foto-central">
+                <img class="imagen-central" src="<%= noticias.foto %>" alt="">
+            </div>
+        </div>
+        <div class="row cajas">
+            <div class="col cuerpo">
+                <p><%= noticias.cuerpo %></p>
+            </div>
+        </div>
+        <div class="row cajas caja-imagenes">
+            <div class="col imagenes-extra">
+                <img class="img-extra primera" src="<%= noticias.imagen1 %>" alt="">
+                <img class="img-extra segunda" src="<%= noticias.imagen2 %>" alt="">
+                <img class="img-extra tercera" src="<%= noticias.imagen3 %>" alt="">
+            </div>
+        </div>
+    </div>
+</body>
