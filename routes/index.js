@@ -70,6 +70,11 @@ indexRouter.get('/catalogo/libro/:librosId', (req, res, next) => {
     });
 });
 
+//muestra la pagina de compra
+indexRouter.get('/catalogo/compra', (req, res, next) => {
+    res.render('catalogo/compra');
+});
+
 //muestra la pagina de artistas
 indexRouter.get('/artistas', (req, res, next) => {
     db.all('SELECT * FROM Libros', (err, libros) => {
