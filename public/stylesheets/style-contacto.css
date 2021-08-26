@@ -29,6 +29,14 @@ footer {
         text-align: center;
     }
 
+    .mail {
+        font-size: 1.7rem;
+    }
+
+    #texto-mail {
+        font-size: 1.2rem;
+    }
+    
     .texto-contacto {
         font-size: 1.9rem;
     }
