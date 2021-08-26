@@ -1,21 +1,77 @@
 body {
-    background-color: #cef0d8;
+    background-color: #ff69b6;
     font-family: 'Work Sans', sans-serif;
     text-align: center;
 }
 
-.cartel-construccion {
+.caja-cabeza {
     padding: 3% 15%;
 }
 
-.cartel-texto {
+.suscripcion-logo {
+    width: 85%;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.caja-niveles {
+    padding: 0% 15% 3%;
+}
+
+.card-header {
+    background-color: #139e11;
     color: #fff;
-    font-weight: 900;
-    font-size: 3rem;
-    line-height: 1.2;
-    background-color: rgb(233, 10, 10);
-    border: 5px solid #000;
-    padding: 20px;
-    border-radius: 20px;
+}
+
+h3 {
     text-transform: uppercase;
+    font-weight: 800;
+    font-size: 1.7rem;
+}
+
+.card-body {
+    background-color: #cef0d8;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 2.7rem;
+}
+
+.texto-nivel, .link-mp, .link-pp, .link-info {
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.link-info {
+    margin-top: 10px;
+}
+
+.icono-mp, .icono-pp {
+    width: 40px;
+    height: 30px;
+}
+
+@media screen and (min-width: 356px) and (orientation: portrait) {
+    h1 {
+        font-weight: 850;
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-weight: 800;
+        font-size: 1.8rem;
+    }
+
+    .carta-nivel {
+        margin-bottom: 20px;
+    }
+
+    .texto-nivel, .link-mp, .link-pp, .link-info {
+        font-size: 1.1rem;
+    }
 }

@@ -63,7 +63,7 @@ p {
 
 @media screen and (min-width: 356px) and (orientation: portrait) {
     .descripcion-texto {
-        font-size: 2rem;
+        font-size: 1.8rem;
         line-height: 1.2;
     }
 

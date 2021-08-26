@@ -23,7 +23,13 @@ indexRouter.param('librosId', (req, res, next, librosId) => {
 //Muestra la pagina de index
 indexRouter.get('/', (req, res, next) => {
     db.all('SELECT * FROM Noticias', (err, noticias) => {
-        res.render('index');
+        if(err) {
+            next(err);
+        } else {
+            res.render('index', {noticias: noticias.map(noticia => {
+                return noticia;
+            })})
+        }
     });
 });
 

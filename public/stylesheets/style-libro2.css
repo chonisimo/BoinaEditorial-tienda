@@ -26,8 +26,18 @@ p {
     font-weight: 700;
 }
 
+.aviso-envio {
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding-left: 10px;
+}
+
 .boton-compra {
     font-weight: 600;
+}
+
+.fisico {
+    margin-bottom: 10px;
 }
 
 .precio {
@@ -74,6 +84,12 @@ p {
 
     h3 {
         font-size: 1.2rem;
+    }
+
+    .aviso-envio {
+        display: block;
+        margin-bottom: 20px;
+        font-size: 1.1rem;
     }
 
     .genero, .tipo, .publico, .medida, .cantidad-paginas {

@@ -34,9 +34,16 @@
         </div>
         <div class="row cajas caja-imagenes">
             <div class="col imagenes-extra">
-                <img class="img-extra primera" src="<%= noticias.imagen1 %>" alt="">
-                <img class="img-extra segunda" src="<%= noticias.imagen2 %>" alt="">
-                <img class="img-extra tercera" src="<%= noticias.imagen3 %>" alt="">
+                <% if (noticias.imagen1 !== null && noticias.imagen2 !== null && noticias.imagen3 !== null) { %> 
+                    <img class="img-extra primera" src="<%= noticias.imagen1 %>" alt="">
+                    <img class="img-extra segunda" src="<%= noticias.imagen2 %>" alt="">
+                    <img class="img-extra tercera" src="<%= noticias.imagen3 %>" alt="">
+                <% } else if (noticias.imagen1 !== null) { %>
+                    <img class="img-extra primera" src="<%= noticias.imagen1 %>" alt="">
+                <% } else if (noticias.imagen1 !== null && noticias.imagen2 !== null) { %>
+                    <img class="img-extra primera" src="<%= noticias.imagen1 %>" alt="">
+                    <img class="img-extra segunda" src="<%= noticias.imagen2 %>" alt="">
+                <% } %> 
             </div>
         </div>
     </div>

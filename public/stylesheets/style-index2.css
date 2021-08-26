@@ -7,6 +7,18 @@ body {
     font-weight: 600;
 }
 
+/* novedades */
+
+#novedades {
+    background-color:  #cef0d8;
+    color: black;
+    padding: 3% 15%;
+}
+
+.imagen-noticia {
+    text-align: center;
+}
+
 /* slogan */
 
 #slogan {
@@ -209,6 +221,11 @@ h1 {
     .suscripcion-logo {
         width: 80%;
         display: inline-flex;
+    }
+
+    .niveles-texto {
+        font-size: 2rem;
+        font-weight: 600;
     }
 
     .comiquerias-image {

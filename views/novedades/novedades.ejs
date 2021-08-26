@@ -7,38 +7,22 @@
 </head>
 <body>
     <div class="row caja-novedades">
-        <% for (var n=0; n < noticias.length; n++) { %>
+        <% var reverso = noticias.reverse(); %> 
+        <% for (var n=0; n < reverso.length; n++) { %>
             <hr>
             <div class="row caja-noticia">
                 <div class="col-lg-3 imagen-box">
                     <img class="imagen-novedades" src="<%= noticias[n].foto %> " alt="noticia1" width="200">
                 </div>
                 <div class="col-lg-9 texto-novedades">
+                    <p class="fecha-novedades"><%= noticias[n].fecha %></p>
                     <h1 class="titulo-novedades"><%= noticias[n].titulo %> </h1>
                     <h3 class="bajada-novedades"><%= noticias[n].bajada %> </h3>
                     <div class="container-fluid novedades-plus">
-                        <a href="/novedades/noticia/<%= n+1 %>"><button type="button" class="boton-noticia btn btn-outline-dark btn-lg">Leer mas</button></a>
+                        <a href="/novedades/noticia/<%= reverso.length-n %>"><button type="button" class="boton-noticia btn btn-outline-dark btn-lg">Leer mas</button></a>
                     </div>
                 </div>
             </div>
         <% } %>
     </div>
-<!--     <div class="row caja-novedades">
-        <div class="col-lg-3 imagen-box">
-            <img class="imagen-novedades" src="https://i.imgur.com/0WWIflp.jpg" alt="noticia1" width="200">
-        </div>
-        <div class="col-lg-9 texto-novedades">
-            <h1 class="titulo-novedades">Inicia preventa "Hansel Legazpi contracorriente"</h1>
-            <h3 class="bajada-novedades">Se da inicio a la preventa del nuevo libro de la editorial. Aprovechen la oportunidad de llevarse el suyo.</h3>
-            <p class="cuerpo-novedades">¡Hola! ¿Como va? 
-                Te molesto por un momento. Quería contarte que estamos realizando la preventa del nuevo libro de Boina editorial a salir el 3 de septiembre. 
-                El libro es “Hansel Legazpi contracorriente” que podés ver en detalle en el posteo que te pase. Si estas interesado en comprar sería de gran 
-                ayuda para la editorial y sus autores. De no poder aportar con dinero, compartir en redes sociales,  difundir entre amigos o cualquier tipo 
-                de promoción es agradecido enormemente.  Desde ya, muchas gracias por tu atención.
-                </p>
-            <div class="container-fluid novedades-plus">
-                <a href="/novedades/noticia/"><button type="button" class="boton-noticia btn btn-outline-dark btn-lg">Leer mas</button></a>
-            </div>
-        </div>
-    </div> -->
 </body>
