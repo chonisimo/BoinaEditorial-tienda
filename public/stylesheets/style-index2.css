@@ -1,5 +1,5 @@
 body {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
     text-align: center;
 }
 
@@ -33,8 +33,8 @@ body {
 
 h1 {
     font-weight: 900;
-    font-size: 3.7rem;
-    line-height: 1.6;
+    font-size: 3.5rem;
+    line-height: 1.4;
     text-align: start;
 }
 
@@ -97,6 +97,7 @@ h1 {
     font-size: 3rem;
     line-height: 1.6;
     text-align: start;
+    color: #000;
 }
 
 .imagenes {
@@ -160,6 +161,7 @@ h1 {
 .icono-suscripcion {
     align-items: center;
     margin: 10px 8px 0;
+    font-size: 2.4rem;
 }
 
 .suscripcion-plus {
@@ -182,6 +184,7 @@ h1 {
     font-size: 2.5rem;
     font-weight: 600;
     margin-top: 20px;
+    line-height: 1.3;
 }
 
 /* envios */
@@ -221,6 +224,10 @@ h1 {
     .suscripcion-logo {
         width: 80%;
         display: inline-flex;
+    }
+
+    .icono-suscripcion {
+        font-size: 1.5rem;
     }
 
     .niveles-texto {

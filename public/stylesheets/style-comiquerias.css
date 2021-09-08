@@ -1,6 +1,6 @@
 body {
     background-color: #cef0d8;
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
 }
 
 .caja-comiqueria {
@@ -10,6 +10,10 @@ body {
 .imagen-comiqueria {
     text-align: center;
     margin-top: 15px;
+}
+
+.logo-comiqueria {
+    width: 70%;
 }
 
 h1 {
@@ -41,6 +45,10 @@ footer {
 @media screen and (min-width: 356px) and (orientation: portrait) {
     body {
         text-align: center;
+    }
+
+    .logo-comiqueria {
+        width: 65%;
     }
 
     h1 {

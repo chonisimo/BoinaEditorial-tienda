@@ -7,9 +7,9 @@ header {
     position: sticky;
     z-index: 1;
     top: 0;
-    background-color: #d55f9b;
+    background-color: #ce5b96;
     padding: 3% 15% 0%;
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
 }
 
 .todo-navegacion {
@@ -62,4 +62,11 @@ header {
 .social-icon {
     color: #000;
     margin: 20px 10px;
+}
+
+@media screen and (min-width: 356px) and (orientation: portrait) {
+    html {
+        max-width: 100%; 
+        overflow-x: hidden;
+    }
 }
