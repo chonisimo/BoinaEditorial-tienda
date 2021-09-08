@@ -25,6 +25,7 @@ body {
 }
 
 .imagen-beneficio {
+    width: 95%;
     border: 5px solid #000;
     transition: 0.3s;
 }
@@ -74,6 +75,10 @@ hr {
     font-size: 1.3rem;
 }
 
+footer {
+    text-align: center;
+}
+
 @media screen and (min-width: 356px) and (orientation: portrait) {
     body {
         text-align: center;
@@ -97,13 +102,14 @@ hr {
     }
 
     .imagen-beneficio {
+        width: 75%;
         margin-bottom: 10px;
-        border: 2px solid #000;
+        border: 3px solid #000;
         transition: 0.3s;
     }
     
     .imagen-beneficio:hover {
-        border: 2px solid #fff;
+        border: 3px solid #fff;
     }
 
     hr {

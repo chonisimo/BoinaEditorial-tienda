@@ -16,6 +16,10 @@ body {
     margin-top: 15px;
 }
 
+.imagen-novedades {
+    width: 70%;
+}
+
 h1 {
     font-weight: 900;
     font-size: 3rem;
@@ -55,6 +59,10 @@ footer {
 @media screen and (min-width: 356px) and (orientation: portrait) {
     body {
         text-align: center;
+    }
+
+    .imagen-novedades {
+        width: 65%;
     }
 
     h1 {

@@ -72,14 +72,14 @@ h1 {
 }
 
 .icono:hover {
-    color: #ff69b6;
+    color: #ce5393;
 }
 
 /* catalogo */
 
 #catalogo {
-    color: #fff;
-    background-color: #eb499c;
+    color:#000;
+    background-color: #b9397b;
 }
 
 .catalogo-titulo, .envios-titulo {
@@ -133,7 +133,7 @@ h1 {
 /* suscripcion */
 
 #suscripcion {
-    background-color: #ff69b6;
+    background-color: #ce5393;
 }
 
 .suscripcion-logo {
@@ -187,8 +187,8 @@ h1 {
 /* envios */
 
 #envios {
-    color: #fff;
-    background-color: #eb499c;
+    color: #000;
+    background-color: #b9397b;
 }
 
 .envios-caja {
