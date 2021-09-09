@@ -24,25 +24,37 @@
         </div>
         <div class="row cajas">
             <div class="col foto-central">
-                <img class="imagen-central" src="<%= noticias.foto %>" alt="">
+                <a href="<%= noticias.foto %>"><img class="imagen-central" src="<%= noticias.foto %>" alt=""></a>
             </div>
         </div>
         <div class="row cajas">
             <div class="col cuerpo">
-                <p><%= noticias.cuerpo %></p>
+                <% if (noticias.cuerpo1 !== null && noticias.cuerpo2 !== null && noticias.cuerpo3 !== null) { %> 
+                    <p><%= noticias.cuerpo1 %></p> 
+                    <br>
+                    <p><%= noticias.cuerpo2 %></p>
+                    <br>
+                    <p><%= noticias.cuerpo3 %></p>
+                <% } else if (noticias.cuerpo1 !== null) { %>
+                    <p><%= noticias.cuerpo1 %></p> 
+                <% } else if (noticias.cuerpo1 !== null && noticias.cuerpo2 !== null) { %>
+                    <p><%= noticias.cuerpo1 %></p> 
+                    <br>
+                    <p><%= noticias.cuerpo2 %></p>
+                <% } %> 
             </div>
         </div>
         <div class="row cajas caja-imagenes">
             <div class="col imagenes-extra">
                 <% if (noticias.imagen1 !== null && noticias.imagen2 !== null && noticias.imagen3 !== null) { %> 
-                    <img class="img-extra primera" src="<%= noticias.imagen1 %>" alt="">
-                    <img class="img-extra segunda" src="<%= noticias.imagen2 %>" alt="">
-                    <img class="img-extra tercera" src="<%= noticias.imagen3 %>" alt="">
+                    <a href="<%= noticias.imagen1 %>"><img class="img-extra primera" src="<%= noticias.imagen1 %>" alt=""></a>
+                    <a href="<%= noticias.imagen2 %>"><img class="img-extra segunda" src="<%= noticias.imagen2 %>" alt=""></a>
+                    <a href="<%= noticias.imagen3 %>"><img class="img-extra tercera" src="<%= noticias.imagen3 %>" alt=""></a>
                 <% } else if (noticias.imagen1 !== null) { %>
-                    <img class="img-extra primera" src="<%= noticias.imagen1 %>" alt="">
+                    <a href="<%= noticias.imagen1 %>"><img class="img-extra primera" src="<%= noticias.imagen1 %>" alt=""></a>
                 <% } else if (noticias.imagen1 !== null && noticias.imagen2 !== null) { %>
-                    <img class="img-extra primera" src="<%= noticias.imagen1 %>" alt="">
-                    <img class="img-extra segunda" src="<%= noticias.imagen2 %>" alt="">
+                    <a href="<%= noticias.imagen1 %>"><img class="img-extra primera" src="<%= noticias.imagen1 %>" alt=""></a>
+                    <a href="<%= noticias.imagen2 %>"><img class="img-extra segunda" src="<%= noticias.imagen2 %>" alt=""></a>
                 <% } %> 
             </div>
         </div>
