@@ -21,7 +21,7 @@
             <p class="cantidad-paginas"><%= libros.paginas %> paginas</p>
             <br>
             <% if (libros.fisico !== null) { %> 
-            <a href="<%= libros.fisico %> "><button type="button" class="boton-compra fisico btn btn-outline-dark btn-lg">Comprar fisico</button></a><span class="aviso-envio">NO incluye costos de envío</span>
+            <a href="<%= libros.fisico %>"><button type="button" class="boton-compra fisico btn btn-outline-dark btn-lg">Comprar fisico</button></a><span class="aviso-envio">NO incluye costos de envío</span>
             <% } else { %>
             <button type="button" class="boton-compra fisico btn btn-outline-dark btn-lg">SIN STOCK</button>
             <% } %> 
@@ -51,31 +51,4 @@
             <p class="descripcion"><%= libros.descripcion %> </p>
         </div>
     </div>
-    <!-- <h1 class="nombre-producto"><%= libros.titulo %></h1>
-    <div class="presentacion">
-        <img class="tapas" src="<%= libros.tapa %>" alt="">
-        <div class="informacion">
-            <p class="precio">$<%= libros.precio %></p>
-            <p>La version digital a mitad de precio.</p>
-            <form action="/carrito" method="POST" class="info-form">
-                <p class="stock">Stock: <%= libros.stock %></p>
-                <input type="number" id="identificacion" name="identificacion" value="<%= libros.id %>">
-            </form>
-        </div>
-    </div>
-    <div class="datos">
-        <ul class="imagenes">
-            <li><a href="<%= libros.pagina1 %>" target="blank"><img src="<%= libros.pagina1 %>" alt=""></a></li>
-            <li><a href="<%= libros.pagina2 %>" target="blank"><img src="<%= libros.pagina2 %>" alt=""></a></li>
-            <li><a href="<%= libros.pagina3 %>" target="blank"><img src="<%= libros.pagina3 %>" alt=""></a></li>
-            <li><a href="<%= libros.pagina4 %>" target="blank"><img src="<%= libros.pagina4 %>" alt=""></a></li>
-            <li><a href="<%= libros.pagina5 %>" target="blank"><img src="<%= libros.pagina5 %>" alt=""></a></li>
-        </ul>
-        <p id="descripcion"><%= libros.descripcion %> </p>
-        <p>Autor: <%= libros.autor %> </p>
-        <p>Genero: <%= libros.genero %> </p>
-        <p>Tipo: <%= libros.tipo %> </p>
-        <p>Publico: <%= libros.publico %> </p>
-        <p>Tamaño: <%= libros.tamaño %>cm </p>
-    </div> -->
 </body>
