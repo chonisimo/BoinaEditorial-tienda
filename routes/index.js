@@ -35,7 +35,7 @@ indexRouter.get('/', (req, res, next) => {
 
 //Muestra la pagina con todo el catalogo
 indexRouter.get('/catalogo', (req, res, next) => {
-    db.all('SELECT * FROM Libros', (err, libros) => {
+    db.all('SELECT * FROM Libros ORDER BY codigo', (err, libros) => {
         if(err) {
             next(err);
         } else {
