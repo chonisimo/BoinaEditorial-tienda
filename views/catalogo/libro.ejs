@@ -13,6 +13,9 @@
         <div class="col-lg-6 datos-libro">
             <h1 class="nombre-producto"><%= libros.titulo %></h1>
             <h2 class="nombre-autor"><%= libros.autor %></h2>
+            <% if (libros.autor2 !== null) { %> 
+                <h2 class="nombre-autor"><%= libros.autor2 %></h2>
+            <% } %> 
             <h2 class="precio">$<%= libros.precio %></h2>
             <p class="genero"><%= libros.genero %></p>
             <p class="tipo"><%= libros.tipo %></p>
