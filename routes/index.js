@@ -89,9 +89,9 @@ indexRouter.get('/artistas', (req, res, next) => {
 });
 
 //muestra la pagina de suscripciones
-indexRouter.get('/suscripciones', (req, res, next) => {
+/*indexRouter.get('/suscripciones', (req, res, next) => {
     res.render('suscripciones/suscripciones');
-});
+});*/
 
 //muestra la pagina de suscripciones nivel 1
 indexRouter.get('/suscripciones/nivel1', (req, res, next) => {
